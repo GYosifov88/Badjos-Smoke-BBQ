@@ -1,5 +1,6 @@
 from enum import Enum
 
+from cloudinary.models import CloudinaryField
 from django.contrib.auth import get_user_model
 from django.db import models
 
@@ -20,11 +21,10 @@ class Photo(StrFromFieldsMixin, models.Model):
     str_fields = ('pk', 'photo', 'title')
     MAX_TITLE_LENGTH = 120
 
-    photo = models.ImageField(
-        upload_to='football_photos/',
+    photo = CloudinaryField(
         null=False,
         blank=True,
-        validators=(validate_file_less_than_7mb,),
+        # validators=(validate_file_less_than_7mb,),
     )
 
     title = models.CharField(

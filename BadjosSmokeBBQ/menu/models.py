@@ -1,5 +1,6 @@
 from enum import Enum
 
+from cloudinary.models import CloudinaryField
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.template.defaultfilters import slugify
@@ -41,11 +42,10 @@ class Menu(models.Model):
 
     description = models.TextField()
 
-    photo = models.ImageField(
-        upload_to='food_photos/',
+    photo = CloudinaryField(
         null=False,
         blank=True,
-        validators=(validate_file_less_than_7mb,),
+        # validators=(validate_file_less_than_7mb,),
     )
 
     slug = models.SlugField(

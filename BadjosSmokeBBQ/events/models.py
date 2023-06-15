@@ -1,3 +1,4 @@
+from cloudinary.models import CloudinaryField
 from django.core.validators import MinLengthValidator
 from django.db import models
 from django.template.defaultfilters import slugify
@@ -22,11 +23,10 @@ class Event(StrFromFieldsMixin, models.Model):
         blank=False
     )
 
-    photo = models.ImageField(
-        upload_to='events-photos/',
+    photo = CloudinaryField(
         null=False,
         blank=True,
-        validators=(validate_file_less_than_7mb,),
+        # validators=(validate_file_less_than_7mb,),
     )
 
     venue_date = models.DateField(

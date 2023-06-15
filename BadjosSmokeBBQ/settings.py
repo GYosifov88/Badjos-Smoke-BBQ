@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+
+import cloudinary
 from dotenv import load_dotenv
 import os
 
@@ -31,6 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'cloudinary',
 
     'BadjosSmokeBBQ.common',
     'BadjosSmokeBBQ.articles',
@@ -129,7 +133,18 @@ STATICFILES_DIRS = (
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'mediafiles'
+
+# That is if we are saving our photos locally
+# MEDIA_ROOT = BASE_DIR / 'mediafiles'
+
+# Using Cloudinary to store images
+cloudinary.config(
+    cloud_name='drumscyfi',
+    api_key="215497287643315",
+    api_secret="cDDq8dbifysLygTnualrBV2ssdI",
+    secure=True
+)
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

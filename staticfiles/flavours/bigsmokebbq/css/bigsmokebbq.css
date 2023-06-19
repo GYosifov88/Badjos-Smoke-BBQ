@@ -1,0 +1,1315 @@
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@font-face {
+  font-family: 'chunkfive';
+  src: url('../css/font/chunk_five_roman-webfont.eot');
+  src: url('../css/font/chunk_five_roman-webfont.eot?#iefix') format('embedded-opentype'), url('../css/font/chunk_five_roman-webfont.woff') format('woff'), url('../css/font/chunk_five_roman-webfont.ttf') format('truetype'), url('../css/font/chunk_five_roman-webfont.svg#chunkfiveroman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* *************** */
+/*  GENERAL STYLES */
+/* *************** */
+/* START EDIT HERE */
+body {
+  font-family: 'Bree Serif', serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/bg-2.jpg") repeat-y top center;
+}
+/* headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "chunkfive";
+  font-weight: 400;
+  color: #fff;
+}
+.blog-sidebar .widget > h3 {
+  font-family: "chunkfive";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 23px;
+  margin: 0 0 20px 0;
+}
+h4 {
+  font-family: "chunkfive";
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+p {
+  text-shadow: none;
+  color: #fff;
+}
+p.bigger {
+  font-size: 16px;
+  line-height: 21px;
+}
+p.large {
+  font-size: 20px;
+  line-height: 23px;
+}
+p a {
+  color: #927660;
+}
+.big {
+  color: #000;
+  font-size: 35px;
+  line-height: 35px;
+  font-family: "chunkfive";
+  text-transform: none;
+  text-align: center;
+}
+.hdr1 {
+  width: 811px;
+  min-height: 63px;
+  padding-top: 8px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/hdr-1.png") no-repeat top center;
+  font-family: "chunkfive";
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+  font-size: 33px;
+  line-height: 33px;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+.hdr1.type2 {
+  width: 656px;
+  height: 137px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/hdr-1-a.png") no-repeat top center;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+  font-size: 29px;
+  line-height: 29px;
+  padding-left: 125px;
+  padding-right: 132px;
+  padding-top: 15px;
+}
+#menu .hdr1.type2 {
+  position: relative;
+  top: -72px;
+  margin-bottom: -120px;
+  pointer-events: none;
+}
+.flexFull .hdr3 {
+  font-family: 'Bree Serif', serif;
+  max-width: 690px;
+  margin: 5px auto 15px auto;
+}
+.flexFull .hdr2 {
+  font-size: 25px;
+  line-height: 25px;
+}
+.hdr2 {
+  font-family: "chunkfive";
+  color: #fff;
+  font-size: 35px;
+  line-height: 35px;
+  text-transform: none;
+  text-shadow: none;
+}
+.hdr2.special {
+  font-family: "chunkfive";
+  font-weight: 400;
+  color: #333;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+.hdr3 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "chunkfive";
+  font-weight: 400;
+  text-transform: none;
+  text-shadow: none;
+}
+.hdr3 a {
+  color: #eee;
+}
+.hdr4 {
+  width: 657px;
+  min-height: 63px;
+  padding-top: 8px;
+  color: #fff;
+  background: transparent url("../../../flavours/bigsmokebbq/images/hdr-4.png") no-repeat top center;
+  font-family: "chunkfive";
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 33px;
+  text-transform: none;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+  margin-bottom: 35px;
+}
+.hdr5 {
+  color: #333333;
+  font-family: "chunkfive";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 27px;
+  text-transform: none;
+}
+.hdr5 span {
+  border-bottom: 0;
+}
+.hdr6 {
+  width: 571px;
+  padding: 7px 40px 0 40px;
+  margin: 0 auto 20px auto;
+  min-height: 199px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/hdr-6.png") no-repeat top center;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  color: #fff;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: none;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+}
+.mapWithOverlay {
+  position: relative;
+}
+.mapWithOverlay .hdr6 {
+  top: 70px;
+  left: 50%;
+  margin-left: -285px;
+  pointer-events: none;
+}
+.btn {
+  padding-top: 11px;
+  padding-bottom: 13px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "chunkfive";
+  text-transform: none;
+  -webkit-box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active,
+.btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  position: relative;
+  top: 1px;
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-default {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#000000), to(#232323));
+  background-image: -webkit-linear-gradient(top, #000000, 0%, #232323, 100%);
+  background-image: -moz-linear-gradient(top, #000000 0%, #232323 100%);
+  background-image: linear-gradient(to bottom, #000000 0%, #232323 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff232323', GradientType=0);
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+  box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+}
+.btn-default:active,
+.btn-default.active,
+.btn-default:hover,
+.btn-default:focus {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#000000), to(#232323));
+  background-image: -webkit-linear-gradient(top, #000000, 0%, #232323, 100%);
+  background-image: -moz-linear-gradient(top, #000000 0%, #232323 100%);
+  background-image: linear-gradient(to bottom, #000000 0%, #232323 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff232323', GradientType=0);
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+  box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+}
+.btn.btn-primary {
+  font-family: "chunkfive";
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#000000), to(#232323));
+  background-image: -webkit-linear-gradient(top, #000000, 0%, #232323, 100%);
+  background-image: -moz-linear-gradient(top, #000000 0%, #232323 100%);
+  background-image: linear-gradient(to bottom, #000000 0%, #232323 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff232323', GradientType=0);
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+  box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+}
+.btn.btn-primary:active,
+.btn.btn-primary.active,
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#000000), to(#232323));
+  background-image: -webkit-linear-gradient(top, #000000, 0%, #232323, 100%);
+  background-image: -moz-linear-gradient(top, #000000 0%, #232323 100%);
+  background-image: linear-gradient(to bottom, #000000 0%, #232323 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff232323', GradientType=0);
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+  box-shadow: 0px 3px 10px 0px rgba(38, 36, 25, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+}
+.btn-sm {
+  padding: 8px 12px 10px 12px;
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.priceHeader {
+  background: transparent url("../../../flavours/bigsmokebbq/images/priceheader-bg.png") repeat-x center top;
+  font-family: 'Bree Serif', serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 20px;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
+  padding-top: 14px;
+}
+.priceHeader:before {
+  content: " ";
+  width: 114px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/priceheader-lft.png") no-repeat top center;
+}
+.priceHeader:after {
+  content: " ";
+  width: 114px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/priceheader-rt.png") no-repeat top center;
+}
+.priceHeader .lft {
+  position: relative;
+  z-index: 1;
+  float: left;
+  min-width: 210px;
+}
+.priceHeader .rt {
+  position: relative;
+  z-index: 1;
+  float: left;
+  min-width: 210px;
+}
+.priceHeader .price {
+  width: 112px;
+  height: 112px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/priceheader-price.png") no-repeat center top;
+  float: left;
+  position: relative;
+  margin-top: -40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.priceHeader .price .el_1 {
+  font-family: 'geared_slabregular';
+}
+.priceHeader .price .el_2 {
+  font-size: 28px;
+  font-family: 'geared_slabbold';
+  top: -0.55em;
+}
+.priceHeader .price .el_3 {
+  font-family: 'geared_slabbold';
+  font-size: 50px;
+  line-height: 40px;
+}
+.priceHeader .price .el_4 {
+  font-family: 'geared_slabbold';
+  display: inline-block;
+  font-size: 28px;
+  top: -0.6em;
+}
+hr.line1 {
+  padding: 20px 0 30px 0;
+  margin: 0;
+  height: 57px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/line-1.png") no-repeat center 20px;
+}
+/* main menu */
+.is-sticky .full-sticky-menu {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+@media (min-width: 990px) {
+  .is-sticky .full-sticky-menu .inner:before {
+    display: none;
+    height: 0;
+  }
+  .is-sticky .full-sticky-menu .small-brand {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 990px) {
+  .navbar-default .navbar-collapse {
+    background: transparent url("../../../flavours/bigsmokebbq/images/bg-1.jpg") repeat-y top center;
+    z-index: 2;
+    position: relative;
+  }
+  .navbar-header .navbar-brand {
+    max-width: 140px !important;
+  }
+  #menu .hdr1.type2 {
+    top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    height: auto;
+  }
+  .hdr1,
+  .hdr4 {
+    color: #fff !important;
+  }
+  .small-brand {
+    margin-bottom: 5px !important;
+    margin-top: 0px !important;
+  }
+}
+.navbar-header .navbar-brand {
+  padding-top: 0;
+}
+.navbar-default .navbar-nav {
+  float: none;
+}
+.navbar-default .navbar-nav > li {
+  margin: 0 15px 0 0;
+}
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Bree Serif', serif;
+  color: #fff;
+  padding: 7px 14px 10px 14px;
+  text-transform: none;
+  font-size: 25px;
+  line-height: 25px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(38, 26, 12, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+  box-shadow: 0px 3px 10px 0px rgba(38, 26, 12, 0.4),0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;;
+  background: #000;
+  color: #fff;
+}
+.navbar-default .inner {
+  background: transparent url("../../../flavours/bigsmokebbq/images/menu-bg.png") repeat-x center top;
+  height: 247px;
+  border: 0;
+}
+.navbar-default .inner:before {
+  content: " ";
+  height: 58px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  background: transparent url("../../../flavours/bigsmokebbq/images/menu-bg-top.png") repeat-x center top;
+}
+.navbar-default .inner .btm {
+  width: 100%;
+  height: 25px;
+  display: block;
+  background: transparent url("../../../flavours/bigsmokebbq/images/menu-bg.png") repeat-x center -246px;
+  pointer-events: none;
+  position: absolute;
+  bottom: -24px;
+}
+.address {
+  font-family: "chunkfive";
+  font-size: 17px;
+  line-height: 19px;
+  color: #fff;
+  text-transform: none;
+  text-shadow: none;
+  padding-top: 13px;
+}
+.blackboard {
+  background: transparent url("../../../flavours/bigsmokebbq/images/blackboard-bg.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.tweet_list li {
+  background: transparent url("../../../flavours/bigsmokebbq/images/twitter-ico.png") no-repeat left 6px;
+  padding-left: 30px;
+  font-family: 'Bree Serif', serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #272727;
+  margin-bottom: 15px;
+}
+.tweet_list li a:first-child {
+  color: #6b6b6b;
+}
+.tweet_list li a {
+  color: #927660;
+}
+.tweet_list li .tweet_time {
+  background: transparent url("../../../flavours/bigsmokebbq/images/hr-tweet.png") repeat-x center bottom;
+  padding-bottom: 15px;
+}
+.tweet_list li .tweet_time a {
+  color: #adadad;
+}
+.tweet_list li:last-child .tweet_time {
+  background: none;
+}
+.customMarker i {
+  background: transparent url("../../../flavours/bigsmokebbq/images/marker-icon.png") no-repeat center bottom;
+}
+.customMarker span {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#000000), to(#1f1f1f));
+  background-image: -webkit-linear-gradient(top, #000000, 0%, #1f1f1f, 100%);
+  background-image: -moz-linear-gradient(top, #000000 0%, #1f1f1f 100%);
+  background-image: linear-gradient(to bottom, #000000 0%, #1f1f1f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff1f1f1f', GradientType=0);
+  font-family: 'Bree Serif', serif;
+  font-size: 15px;
+  line-height: 21px;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;
+  box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.3) inset;
+  text-shadow: none;
+}
+.customMarker span:before {
+  border-color: #1f1f1f transparent transparent transparent;
+}
+/* socials links */
+.smallSocials li {
+  background: transparent url("../../../flavours/bigsmokebbq/images/smallsocial-bg.png") no-repeat 0 0;
+}
+.smallSocials li a img {
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.smallSocials li.fb {
+  background-position: 0 0;
+}
+.smallSocials li.tw {
+  background-position: -54px 0;
+}
+.smallSocials li.gg {
+  background-position: -106px 0;
+}
+.smallSocials li.rss {
+  background-position: -158px 0;
+}
+.smallSocials li.fb:hover {
+  background-position: 0 -32px;
+}
+.smallSocials li.tw:hover {
+  background-position: -54px -32px;
+}
+.smallSocials li.gg:hover {
+  background-position: -106px -32px;
+}
+.smallSocials li.rss:hover {
+  background-position: -158px -32px;
+}
+.bigSocials li {
+  background: transparent url("../../../flavours/bigsmokebbq/images/social-bg.png") no-repeat 0 0;
+}
+.bigSocials li a img {
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.bigSocials li.fb {
+  background-position: 0 0;
+}
+.bigSocials li.tw {
+  background-position: -70px 0;
+}
+.bigSocials li.gg {
+  background-position: -142px 0;
+}
+.bigSocials li.rss {
+  background-position: -212px 0;
+}
+.bigSocials li.fb:hover {
+  background-position: 0 -40px;
+}
+.bigSocials li.tw:hover {
+  background-position: -70px -40px;
+}
+.bigSocials li.gg:hover {
+  background-position: -142px -40px;
+}
+.bigSocials li.rss:hover {
+  background-position: -212px -40px;
+}
+.phoneIcon,
+.locationIcon {
+  background: transparent url("../../../flavours/bigsmokebbq/images/mobile-flag.png") no-repeat 0 0;
+}
+.phoneIcon {
+  background-position: -287px 0;
+}
+.section > .inner {
+  padding-bottom: 85px;
+}
+.bg-1 {
+  background: transparent url("../../../flavours/bigsmokebbq/images/bg-1.jpg") repeat-y top center;
+}
+.bg-2 {
+  background: transparent url("../../../flavours/bigsmokebbq/images/bg-2.jpg") repeat-y top center;
+}
+.bg-1.topOrnament,
+.bg-2.topOrnament {
+  padding-top: 30px;
+}
+.bg-1.topOrnament > .inner,
+.bg-2.topOrnament > .inner {
+  padding-top: 0;
+}
+.bg-1.topOrnament:before,
+.bg-2.topOrnament:before {
+  content: " ";
+  display: block;
+  height: 85px;
+  width: 100%;
+  position: absolute;
+  top: -85px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/bg-1-top.png") no-repeat top center;
+}
+.bg-2.topOrnament:before {
+  background: transparent url("../../../flavours/bigsmokebbq/images/bg-2-top.png") no-repeat top center;
+}
+.flexslider.flexFull.type2 .flex-direction-nav a {
+  background: transparent url("../../../flavours/bigsmokebbq/images/slider2-controls.png") no-repeat left top;
+}
+.flexslider.flexFull.type2 .flex-direction-nav a:hover {
+  background-position: left -145px;
+}
+.flexslider.flexFull.type2 .flex-direction-nav a:before {
+  display: none;
+  height: 0;
+}
+.flexslider.flexFull.type2 .flex-direction-nav .flex-next {
+  background-position: -167px 0;
+}
+.flexslider.flexFull.type2 .flex-direction-nav .flex-next:hover {
+  background-position: -167px -145px;
+}
+.flexslider.flexFade .descArea {
+  background: transparent url("../../../flavours/bigsmokebbq/images/circle-flex.png") no-repeat top center;
+}
+.flexslider.flexFade .descArea h4 {
+  font-family: "chunkfive";
+  font-weight: 400;
+  text-transform: none;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-shadow: none;
+}
+.flexslider.flexFade .descArea h5 {
+  color: #fff;
+  font-family: "chunkfive";
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  text-transform: none;
+  text-shadow: none;
+}
+.flexslider.flexFade .descArea p {
+  color: #fff;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+}
+.flexslider.flexFade .price {
+  font-family: 'geared_slabbold';
+  font-size: 60px;
+  line-height: 70px;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+}
+.flexslider.flexFade .price em {
+  font-family: 'geared_slabbold';
+  font-size: 36px;
+  line-height: 36px;
+  top: -0.55em;
+}
+.flexslider.flexFade .price span {
+  font-family: 'geared_slabbold';
+  font-size: 36px;
+  line-height: 36px;
+  top: -0.55em;
+  padding-left: 3px;
+}
+.hdr7 {
+  font-family: "chunkfive";
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  color: #fff;
+  text-transform: none;
+}
+p.highlighted {
+  color: #fff;
+  text-shadow: none;
+}
+.prodBox {
+  font-family: 'Bree Serif', serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 18px;
+}
+.prodBox p {
+  font-family: 'Bree Serif', serif;
+  color: #333;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+.prodBox .info {
+  display: block;
+  padding: 15px 0;
+  color: #676464;
+  font-size: 11px;
+  line-height: 18px;
+}
+.prodBox h4 {
+  color: #333;
+  font-family: "chunkfive";
+  font-size: 24px;
+  line-height: 27px;
+  text-transform: none;
+}
+.prodBox .price {
+  color: #fff;
+  font-family: 'geared_slabbold';
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+  font-size: 48px;
+  line-height: 48px;
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  margin-left: -55px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/prodbox-price.png") no-repeat top center;
+  border: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+  width: 110px;
+  height: 110px;
+}
+.prodBox .price small {
+  font-size: 18px;
+  font-family: 'geared_slabregular';
+}
+.prodBox .price em {
+  font-style: normal;
+  font-family: 'geared_slabbold';
+  font-size: 26px;
+  top: -0.65em;
+}
+.prodBox .price span {
+  font-family: 'geared_slabbold';
+  padding-left: 3px;
+  font-size: 26px;
+  top: -0.65em;
+}
+.menuBox .top {
+  background: transparent url("../../../flavours/bigsmokebbq/images/menubox-top.png") no-repeat center 1px;
+  padding: 28px 0 0 0;
+  text-transform: none;
+  color: #ffffff;
+  font-family: "chunkfive";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+}
+.menuBox .top span {
+  padding-top: 12px;
+}
+.menuBox .inner p {
+  color: #333;
+  font-family: 'Bree Serif', serif;
+}
+.menuBox .inner .title {
+  color: #333;
+  font-family: "chunkfive";
+}
+.menuBox .inner .price {
+  font-family: "chunkfive";
+  color: #333;
+  font-size: 25px;
+  line-height: 20px;
+}
+.menuBox .inner .price em {
+  font-style: normal;
+  font-family: "chunkfive";
+  font-size: 14px;
+  top: -0.55em;
+}
+.menuBox .inner .price span {
+  font-family: "chunkfive";
+  font-size: 14px;
+  top: -0.55em;
+}
+.menuBox hr {
+  background: transparent url("../../../flavours/bigsmokebbq/images/line-hr2.png") repeat-x center 10px;
+  height: 1px;
+  padding: 10px 0;
+}
+.eventBox {
+  background: #f4f2ea;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.eventBox .hdr2 {
+  font-size: 35px;
+  line-height: 35px;
+  color: #333333;
+  text-shadow: none;
+}
+.eventBox hr {
+  height: 1px;
+  background: #90867c;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.eventBox .date {
+  padding-top: 23px;
+  background: #000;
+  font-family: "chunkfive";
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+}
+.eventBox .date span {
+  font-family: "chunkfive";
+  font-size: 55px;
+}
+.eventBox .place {
+  font-family: "chunkfive";
+  color: #333;
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow: none;
+  text-transform: none;
+  padding: 12px 0 6px 0;
+}
+.eventBox .time {
+  font-family: "chunkfive";
+  color: #333;
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow: none;
+  text-transform: none;
+}
+.mapit,
+.shareit {
+  font-family: "chunkfive";
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: none;
+  color: #333;
+}
+.mapit:hover,
+.shareit:hover {
+  color: #333;
+}
+.mapit i,
+.shareit i {
+  background: transparent url("../../../flavours/bigsmokebbq/images/marker-share.png") no-repeat 0 0;
+}
+.shareit i {
+  background-position: 0 -124px;
+}
+.easyBox {
+  background: #f4f2ea;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.easyBox p {
+  color: #333;
+}
+.easyBox h1,
+.easyBox h2,
+.easyBox h3,
+.easyBox h4,
+.easyBox h5,
+.easyBox h6 {
+  color: #333;
+}
+.bx-wrapper .bx-prev {
+  background: transparent url("../../../flavours/bigsmokebbq/images/controls-bxslider.png") no-repeat 0 0;
+  left: 85px;
+}
+.bx-wrapper .bx-prev:hover {
+  background-position: 0 -54px;
+}
+.bx-wrapper .bx-next {
+  background: transparent url("../../../flavours/bigsmokebbq/images/controls-bxslider.png") no-repeat -94px 0;
+  right: 85px;
+}
+.bx-wrapper .bx-next:hover {
+  background-position: -94px -54px;
+}
+.galleryBox .top {
+  font-size: 26px;
+  line-height: 26px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/gallerybox-top.png") no-repeat center 1px;
+  text-transform: none;
+  font-family: "chunkfive";
+  padding-top: 67px;
+  color: #ffffff;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+}
+.galleryContainer li a div {
+  background: #484848;
+  background: rgba(83, 83, 83, 0.82);
+}
+.galleryContainer li a div span {
+  text-transform: none;
+  font-family: 'Bree Serif', serif;
+  text-shadow: none;
+  color: #fff;
+  font-size: 25px;
+}
+.form-control {
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+  background-color: #ebe9df;
+  border: 1px solid transparent;
+  font-family: 'Bree Serif', serif;
+}
+.form-control:-moz-placeholder {
+  color: #927660;
+}
+.form-control::-moz-placeholder {
+  color: #927660;
+}
+.form-control:-ms-input-placeholder {
+  color: #927660;
+}
+.form-control::-webkit-input-placeholder {
+  color: #927660;
+}
+.form-control:focus {
+  border-color: #cccccc;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204, 204, 204, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(204, 204, 204, 0.6);
+}
+form label {
+  color: #333;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "chunkfive";
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 15px;
+  text-shadow: none;
+}
+footer {
+  background: transparent url("../../../flavours/bigsmokebbq/images/footer-bg-repeat.jpg") repeat top center;
+}
+footer .googleMap {
+  margin-top: -24px;
+}
+footer .row > div:last-child h4 {
+  text-align: center;
+}
+footer .row > div h4:first-child {
+  margin-top: 70px;
+}
+footer .row > div > img {
+  position: relative;
+  z-index: 1;
+}
+footer h4 {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: none;
+  font-family: "chunkfive";
+}
+footer p {
+  font-family: 'Bree Serif', serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+}
+footer hr {
+  background: transparent url("../../../flavours/bigsmokebbq/images/hr-contact.png") repeat-x left 20px;
+}
+footer .copyright {
+  color: #ffffff;
+  font-family: 'Bree Serif', serif;
+}
+footer .copyright a {
+  color: #bbb;
+}
+footer .tweet_list li {
+  background: transparent url("../../../flavours/bigsmokebbq/images/hr-contact.png") repeat-x left top;
+  color: #fff;
+}
+footer .tweet_list li:before {
+  background: transparent url("../../../flavours/bigsmokebbq/images/twitter-ico.png") no-repeat top center;
+  top: 23px;
+}
+footer .tweet_list li a {
+  color: #927660;
+}
+footer .tweet_list li .tweet_time {
+  background: none;
+  padding-bottom: 0;
+}
+footer .tweet_list li .tweet_time a {
+  color: #ebe9df;
+}
+footer .tweet_list li:first-child {
+  background: none;
+  padding-top: 0;
+}
+footer .tweet_list li:first-child:before {
+  top: 6px;
+}
+footer:before {
+  height: 200px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/footer-bg.jpg") repeat-x center top;
+}
+footer #toTop {
+  width: 109px;
+  height: 57px;
+  background: transparent url("../../../flavours/bigsmokebbq/images/totop-btn.png") no-repeat center top;
+  margin-left: -55px;
+}
+.navbar-default .navbar-nav.text-center > li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navbar-default .navbar-nav.text-center > li > a {
+  font-size: 21px;
+  line-height: 21px;
+}
+.personBox .ptitle {
+  font-family: "chunkfive";
+  background: #000;
+  text-shadow: 2px 3px 0px rgba(59, 127, 139, 0.14);
+  font-size: 23px;
+  line-height: 24px;
+}
+.buttonBox {
+  background: transparent url("../../../flavours/bigsmokebbq/images/buttonbox-bg.png") no-repeat center top;
+  width: 821px;
+  min-height: 79px;
+  padding-top: 13px;
+  font-family: "chunkfive";
+  color: #fff;
+}
+.buttonBox p {
+  margin-top: 3px;
+  color: #fff;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 26px;
+  line-height: 30px;
+}
+.nav-tabs.type2 > li.active > a,
+.nav-tabs.type2 > li.active > a:hover,
+.nav-tabs.type2 > li.active > a:focus {
+  color: #333;
+}
+.nav-tabs.type2 > li > a {
+  color: #333;
+}
+.nav-tabs.type2 > li > a:hover {
+  color: #333;
+}
+.nav-tabs.type2 + .tab-content * {
+  color: #333;
+}
+.nav-tabs.type2.dark_ver + .tab-content {
+  background: #222;
+}
+.nav-tabs.type2.dark_ver > li > a {
+  background: #1a1a1a;
+}
+.nav-tabs.type2.dark_ver > li + li + li > a {
+  background: #111;
+}
+.nav-tabs.type2.dark_ver > li > a:hover {
+  background: #222;
+  color: #fff;
+}
+.nav-tabs.type2.dark_ver > li.active > a,
+.nav-tabs.type2.dark_ver > li.active > a:hover,
+.nav-tabs.type2.dark_ver > li.active > a:focus {
+  background: #222;
+}
+.bg-2 .panel-default > .panel-heading a {
+  color: #fff;
+  font-family: 'Bree Serif', serif;
+}
+.bg-2 .panel-default > .panel-heading + .panel-collapse .panel-body {
+  color: #fff;
+}
+.bg-2 .panel-default > .panel-heading a:before {
+  color: #fff;
+}
+.box_text .ribbon_icon {
+  color: #fff;
+}
+.testimonial.dark_ver .inner {
+  background: #222;
+  color: #fff;
+}
+.testimonial.dark_ver .inner p {
+  color: #fff;
+}
+.testimonial.dark_ver .inner:after {
+  border-color: #222 transparent transparent transparent;
+}
+.blog-sidebar .widget_archive h3 + ul > li,
+.blog-sidebar .widget_categories h3 + ul > li,
+.blog-sidebar .widget_recent_entries h3 + ul > li,
+.blog-sidebar .widget_recent_comments h3 + ul > li,
+.blog-sidebar .widget_categories h3 + ul > li,
+.blog-sidebar .widget_meta h3 + ul > li,
+.blog-sidebar .widget_pages h3 + ul > li,
+.blog-sidebar .widget_rss h3 + ul > li,
+.blog-sidebar .widget_links h3 + ul > li {
+  color: #fff;
+}
+.blog-sidebar .widget_archive h3 + ul > li.active,
+.blog-sidebar .widget_categories h3 + ul > li.active,
+.blog-sidebar .widget_recent_entries h3 + ul > li.active,
+.blog-sidebar .widget_recent_comments h3 + ul > li.active,
+.blog-sidebar .widget_categories h3 + ul > li.active,
+.blog-sidebar .widget_meta h3 + ul > li.active,
+.blog-sidebar .widget_pages h3 + ul > li.active,
+.blog-sidebar .widget_rss h3 + ul > li.active,
+.blog-sidebar .widget_links h3 + ul > li.active {
+  color: #927660;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background: #927660;
+  color: #fff;
+}
+.nav-tabs > li > a:hover {
+  background: #222;
+  color: #fff;
+}
+.nav-tabs > li > a {
+  background: #222;
+  color: #fff;
+}
+.blog-sidebar .widget .tab-content ul > li {
+  color: #fff;
+}
+.blog-main .meta_box {
+  color: #fff;
+}
+.blog-main .meta_box > span:before {
+  background: #fff;
+}
+.box_text .inner {
+  background: #000;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background: #222;
+  border: 1px solid #BCD2C5;
+}
+.pagination > li > a,
+.pagination > li > span {
+  background: #222;
+  border: 1px solid #BCD2C5;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border: 1px solid #BCD2C5;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background: #fff;
+  color: #222;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  background: #fff;
+  color: #222;
+}
+.flexslider.flexSimple .flex-direction-nav a {
+  background: #222;
+}
+.blog-sidebar .tweet_list li .tweet_time a {
+  color: #927660;
+}
+.blog-sidebar .tweet_list li {
+  color: #777;
+}
+.blog-sidebar .tweet_list li a {
+  color: #796250;
+}
+.blog-post label {
+  font-family: 'Bree Serif', serif;
+  color: #fff;
+}
+.highlight.type1,
+.highlight.type2 {
+  color: #FFF;
+}
+.highlight.type1 {
+  background: #222;
+}
+.flickr_badge > div {
+  color: #222;
+}
+.tooltip-inner {
+  background-color: #111;
+}
+#qLpercentage {
+  color: #222 !important;
+}
+#qLbar {
+  background-color: #222 !important;
+}
+.box_text .ribbon_icon {
+  background-image: url("../../../flavours/bigsmokebbq/images/blog-ribbon3.png");
+}
+.blog-main .blog_thumbnail .ribbon_details {
+  background-image: url("../../../flavours/bigsmokebbq/images/blog-ribbon1.png");
+}
+.blog-main .meta_box .meta_comments em {
+  background-image: url("../../../flavours/bigsmokebbq/images/blog-ribbon2.png");
+}
+.progress:before {
+  background-image: url("../../../flavours/bigsmokebbq/images/progress-bar-left.png");
+}
+.progress-bar {
+  background-image: url("../../../flavours/bigsmokebbq/images/progress-bar-md.png");
+}
+.progress-bar:before {
+  background-image: url("../../../flavours/bigsmokebbq/images/progress-bar-right.png");
+}
+.soc_list > li > a {
+  color: #333333;
+  background-image: url("../../../flavours/bigsmokebbq/images/soc-small.png");
+}
+.soc_list > li > a:hover {
+  color: #fff;
+}
+.soc_list.soc-medium > li > a {
+  background-image: url("../../../flavours/bigsmokebbq/images/soc-medium.png");
+}
+.soc_list.soc-big > li > a {
+  background-image: url("../../../flavours/bigsmokebbq/images/soc-big.png");
+}
+.box_text .inner .author {
+  color: #484848;
+  text-shadow: none;
+}
+.blog-main .meta_box {
+  color: #fff;
+  font-family: "chunkfive";
+  font-size: 17px;
+  line-height: 18px;
+}
+.blog-main .meta_box > span:before {
+  background: #fff;
+}
+.blog-main .blog_title {
+  font-family: "chunkfive";
+  font-size: 25px;
+  line-height: 26px;
+  color: #fff;
+}
+.blog-main .meta_box .meta_comments em {
+  color: #fff;
+  font-family: 'geared_slabbold';
+  font-size: 20px;
+  line-height: 21px;
+}
+.tooltip-inner {
+  background-color: #000;
+  color: #fff;
+  text-shadow: 0px -1px 0px #000000;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #000;
+}
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: #000;
+}
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: #000;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #000;
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: #000;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #000;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #000;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #000;
+}
+.pie-chart {
+  color: #fff;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
+}
+.navbar-nav > li > .dropdown-menu {
+  border: 1px solid #534c4c;
+  background: #000;
+}
+.navbar-nav > li > .dropdown-menu > li > a {
+  font-family: 'Bree Serif', serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 19px;
+}
+.navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-nav > li > .dropdown-menu > li > a:focus {
+  background: rgba(255, 255, 255, 0.2);
+}

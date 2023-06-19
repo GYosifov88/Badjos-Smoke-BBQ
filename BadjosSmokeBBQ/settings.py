@@ -139,9 +139,9 @@ MEDIA_URL = '/media/'
 
 # Using Cloudinary to store images
 cloudinary.config(
-    cloud_name='drumscyfi',
-    api_key="215497287643315",
-    api_secret="cDDq8dbifysLygTnualrBV2ssdI",
+    cloud_name=os.environ.get('CLOUDINARY_NAME'),
+    api_key=os.environ.get('CLOUDINARY_API_KEY'),
+    api_secret=os.environ.get('CLOUDINARY_API_SECRET'),
     secure=True
 )
 

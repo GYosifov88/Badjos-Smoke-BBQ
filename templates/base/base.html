@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta name="description" content=" ">
+  <meta name="author" content=" ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Badjo's Big Smoke BBQ</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'js/customscroll/jquery.mCustomScrollbar.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'js/flexslider/css/flexslider.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'js/prettyPhoto/css/prettyPhoto.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'js/bxslider/jquery.bxslider.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'flavours/bigsmokebbq/css/bigsmokebbq.css' %}">
+
+  <!-- modernizr : detect css transition -->
+  <script src="{% static 'js/modernizr.custom.81779.js' %}"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="{% static 'bootstrap/js/html5shiv.js' %}"></script>
+  <script src="{% static 'bootstrap/js/respond.min.js' %}"></script>
+  <![endif]-->
+</head>
+
+<body>
+<header>
+    {% include 'base/partials/nav.html' %}
+</header>
+
+<main>
+    {% block page_content %}
+    {% endblock %}
+</main>
+
+<footer>
+    {% include 'base/partials/footer.html' %}
+</footer>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- we're including library : maps.googleapis.com/maps/api/js?sensor=false in main.js -->
+<script src="{% static 'js/gmap3.min.js' %}"></script>
+
+<script src="{% static 'js/customscroll/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/flexslider/jquery.easing.1.3.min.js' %}"></script>
+<script src="{% static 'js/flexslider/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'js/prettyPhoto/js/jquery.prettyPhoto.js' %}"></script>
+<script src="{% static 'js/bxslider/jquery.bxslider.min.js' %}"></script>
+<script src="{% static 'twitter/js/jquery.tweet.js' %}"></script>
+<script src="{% static 'js/jquery.hoverdir.js' %}"></script><script src="{% static 'js/jquery.arctext.js' %}"></script>
+<script src="{% static 'js/jquery.placeholder.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+
+<script src="{% static 'form/js/form.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<script src="{% static 'js/less.min.js' %}"></script>
+</body>
+</html>

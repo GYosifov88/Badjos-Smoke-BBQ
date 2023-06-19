@@ -1,0 +1,188 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+<!-- *********************** -->
+<!-- ** FULL WIDTH SLIDER ** -->
+<!--
+<div class="flexFull type2 flexslider loading-slider text-center" id="location">
+  <ul class="slides">
+    <li>
+      <img src="./assets/flavours/bigsmokebbq/images/content/sliderfull-1.jpg" alt=" ">
+    </li>
+    <li>
+      <img src="./assets/flavours/bigsmokebbq/images/content/sliderfull-1.jpg" alt=" ">
+    </li>
+  </ul>
+</div>
+-->
+
+<!-- ******************** -->
+<!-- ** FULL WIDTH MAP ** -->
+<!--
+<div class="mapWithOverlay" id="location">
+  <h4 class="hdr6 curved" data-radius="600" data-direction="1">Wheres the truck?</h4>
+
+  <div class="googleMap" data-location="Junipers Blvd. 380 Queens, NY 11379, USA" data-text="Junipers Blvd. 380 Queens, NY 11379, USA" data-height="480" data-offset="-80"></div>
+</div>
+-->
+
+<!-- ***************** -->
+<!-- ** THREE BOXES ** -->
+<div class="row nomargin threeBoxes" id="location">
+  <div class="col-md-4 col-sm-4">
+
+    <div class="googleMap" data-location="Marine Ave. New York, NY" data-text="Big Smoke Ave .1224, <br>New York, NY"></div>
+
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="full-width-photo" data-image="./assets/flavours/bigsmokebbq/images/content/photo-1.jpg"></div>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="blackboard custom-scrollbar">
+
+      <h3 class="big">Recent Tweets</h3>
+
+      <div class="tweets">
+        <div style="display:none">here will be displayed live tweets, configuration is placed in /twitter/config.php</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-1 section" id="menu">
+  <div class="inner" data-image="./assets/flavours/bigsmokebbq/images/content/background-1.jpg">
+    <div class="container">
+      <h3 class="hdr1 type2">Get the best BBQ in Town</h3>
+    </div>
+
+    <!-- ******************* -->
+     <!-- ** CIRCLE SLIDER ** -->
+    <div class="space50px"></div>
+     <div class="container">
+       <div class="row">
+         <div class="col-md-8">
+           <div class="flexFade flexslider loading-slider text-right">
+             <ul class="slides">
+               <li>
+                 <div class="descArea">
+                   <h4>Hot from<br>the Grill</h4>
+                   <hr>
+                   <h5>Fire roasted T-Bone Steak with fries</h5>
+                   <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt
+                   </p>
+                   <span class="price"><em>$</em>11<span>99</span></span>
+
+                 </div>
+                 <div class="roundedImg" data-size="320">
+                   <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/photo-3.jpg" alt=" ">
+                 </div>
+               </li>
+               <li>
+                 <div class="descArea">
+                   <h4>Our <br>Starters</h4>
+                   <hr>
+                   <h5>Rib Eye Burger with homemade sauce</h5>
+                   <p>
+                     Pellentesque eget augue et ipsum laoreet ultrices eget ut est. Donec tincidunt justo nec lobortis molestie.
+                   </p>
+                   <span class="price"><em>$</em>9<span>99</span></span>
+
+                 </div>
+                 <div class="roundedImg" data-size="320">
+                   <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/photo-4.jpg" alt=" ">
+                 </div>
+               </li>
+             </ul>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <h4 class="hdr7">About Us</h4>
+
+           <div class="roundedImg pull-right" data-size="160">
+             <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/photo-5.jpg" alt=" ">
+           </div>
+           <p class="bigger highlighted">
+             Hello Foody! We have traveled countless miles, hundreds of sailing through storms to find out where is the best and freshest food in the world.
+             <br>
+             Ultimately we have brought them to our restaurant to let you enjoy this priceless treasure.<br><br>
+             Please consider yourself. Good Appetite!<br>
+             Your Chef Team<br>
+           </p>
+
+         </div>
+       </div>
+     </div>
+     <div class="space50px"></div>
+  </div>
+</div>
+
+
+<div class="bg-2 topOrnament section">
+<div class="inner">
+<div class="container">
+
+  <div class="text-center">
+    <img src="./assets/flavours/bigsmokebbq/images/content/photo-2.png" alt=" ">
+  </div>
+  <br>
+
+  <h3 class="hdr4">Our recommendations</h3>
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <div class="prodBox pull-left">
+        <div class="frameImg"><img src="./assets/flavours/bigsmokebbq/images/content/product-1.jpg" alt=" "></div>
+
+        <div class="inner">
+          <h4>Slow grilled pulled pork sandwich</h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu.
+          </p>
+          <span class="price"><small>just</small><em>$</em>11<span>99</span></span>
+          <a href="#" class="btn btn-primary btn-sm">order now!</a>
+        </div>
+      </div>
+      <!-- / prodBox -->
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="prodBox type2">
+        <div class="frameImg"><img src="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" alt=" "></div>
+
+        <div class="inner">
+          <h4>Rib Eye Burger with homemade sauce</h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius Lorem, consectetur adipisicing elit, sed do eiu.
+          </p>
+          <span class="price"><small>just</small><em>$</em>9<span>99</span></span>
+          <a href="#" class="btn btn-primary btn-sm">order now!</a>
+        </div>
+      </div>
+      <!-- / prodBox -->
+    </div>
+    <div class="clearfix visible-sm"></div>
+    <div class="col-md-4 col-sm-12">
+      <div class="prodBox type3 pull-right">
+        <div class="frameImg"><img src="./assets/flavours/bigsmokebbq/images/content/product-3.jpg" alt=" "></div>
+
+        <div class="inner">
+          <h4>Black Angus Steak with coleslaw</h4>
+
+          <p>Lorem ipsum dolor sit amet, consectetudo eius Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu.</p>
+          <span class="price"><small>just</small><em>$</em>9<span>99</span></span>
+          <a href="#" class="btn btn-primary btn-sm">order now!</a>
+        </div>
+      </div>
+      <!-- / prodBox -->
+    </div>
+  </div>
+  <!-- / row -->
+  <h3 class="hdr2">Whatever you choose</h3>
+  <h4 class="hdr3">Be 100% sure, that our Food is entirely made of biological ingredients</h4>
+
+</div>
+</div>
+</div>
+{% endblock %}

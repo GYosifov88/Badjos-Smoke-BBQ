@@ -1,0 +1,96 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+<!-- ******************** -->
+<!-- ** FULL WIDTH MAP ** -->
+<div class="mapWithOverlay" id="location">
+  <h4 class="hdr6 curved" data-radius="600" data-direction="1">Wheres the truck?</h4>
+
+  <div class="googleMap" data-location="Junipers Blvd. 380 Queens, NY 11379, USA" data-text="Junipers Blvd. 380 Queens, NY 11379, USA" data-height="400" data-offset="-80"></div>
+</div>
+
+<div class="bg-2 section" id="contact">
+  <div class="inner" data-topspace="50" data-bottomspace="20" data-image="./assets/flavours/bigsmokebbq/images/content/background-6.jpg">
+
+    <div class="container">
+
+      <h3 class="hdr4">Drop us a line!</h3>
+
+      <div class="easyBox full">
+
+        <h4 class="hdr5"><span>Did you know? We also provide super duper catering!</span></h4>
+
+        <div class="row nomargin">
+          <div class="col-md-5">
+            <h4 class="hdr2 special">Email Us</h4>
+
+            <form class="simpleForm" action="./assets/form/form.php" method="post">
+              <fieldset>
+                <div class="form-group">
+                  <label>Your name</label>
+                  <input type="text" class="form-control" name="field_[]" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                  <label>E-mail address</label>
+                  <input type="email" required class="form-control" name="email" placeholder="enter your e-mail address">
+                </div>
+                <div class="form-group">
+                  <label>Your message</label>
+                  <textarea class="form-control" rows="5" name="field_[]" placeholder="type your message"></textarea>
+                </div>
+                <input type="hidden" name="msg_subject" value="Contact Form">
+                <input type="hidden" name="field_[]" value=" ">
+                <input class="btn btn-default" type="submit" value="Submit">
+              </fieldset>
+            </form>
+            <div class="successMsg" style="display:none;">
+               Message has been sent successfully!
+            </div>
+            <div class="errorMsg" style="display:none;">
+              An error occurred, please try again later.
+            </div>
+
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-5">
+            <h4 class="hdr2 special">Newsletter</h4>
+
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+            </p>
+
+            <form class="newsletterForm simpleForm" action="./assets/form/form.php" method="post">
+              <fieldset>
+                <div class="form-group">
+                  <input class="form-control" type="email" name="email" required placeholder="enter your e-mail address">
+                </div>
+                <input type="hidden" name="msg_subject" value="New Newsletter subscription">
+                <input type="hidden" name="field_[]" value=" ">
+                <input class="btn btn-default" type="submit" value="Submit">
+              </fieldset>
+            </form>
+            <div class="successMsg" style="display:none;">
+               Your e-mail has been added to our list!
+            </div>
+            <div class="errorMsg" style="display:none;">
+              Error, please try again later.
+            </div>
+
+            <div class="space50px"></div>
+
+            <p>Stop @ our Homebase and say hello!!!</p>
+
+            <div class="googleMap" data-location="Marine Ave. New York, NY" data-text="We are here!"></div>
+
+          </div>
+        </div>
+      </div>
+      <!-- / easyBox -->
+
+    </div>
+  </div>
+</div>
+<!-- bg-1 -->
+
+{% endblock %}

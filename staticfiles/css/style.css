@@ -34,6 +34,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.tweets p.article {
+    color: black;
+    font-size: 25px;
+    line-height: 35px;
+    font-family: "chunkfive";
+    text-transform: none;
+    text-align: left;
+}
+
+.article_footer{
+      color: #927660;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: "chunkfive";
+    text-transform: none;
+    text-align: center;
+}
 /* font face */
 @font-face {
   font-family: 'geared_slabregular';
@@ -3422,3 +3440,5 @@ body.preloader #ct_preloader {
     margin-right: 50px !important;
   }
 }
+
+

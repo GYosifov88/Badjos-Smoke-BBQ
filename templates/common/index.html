@@ -35,24 +35,27 @@
 
   </div>
   <div class="col-md-4 col-sm-4">
-    <div class="full-width-photo" data-image="./assets/flavours/bigsmokebbq/images/content/photo-1.jpg"></div>
+    <div class="full-width-photo" data-image="{% static 'images/motorbike-touring.jpg' %}"></div>
   </div>
   <div class="col-md-4 col-sm-4">
     <div class="blackboard custom-scrollbar">
 
-      <h3 class="big">Recent Tweets</h3>
+      <h3 class="big">Recent Articles</h3>
 
       <div class="tweets">
-        <div style="display:none">here will be displayed live tweets, configuration is placed in /twitter/config.php</div>
+          {% for article in articles %}
+              <p class="article">{{ article.title }}</p>
+          {% endfor %}
+{#        <div style="display:none">here will be displayed live tweets, configuration is placed in /twitter/config.php</div>#}
       </div>
     </div>
   </div>
 </div>
 
 <div class="bg-1 section" id="menu">
-  <div class="inner" data-image="./assets/flavours/bigsmokebbq/images/content/background-1.jpg">
+  <div class="inner" data-image="{% static 'flavours/bigsmokebbq/images/content/background-1.jpg' %}">
     <div class="container">
-      <h3 class="hdr1 type2">Get the best BBQ in Town</h3>
+      <h3 class="hdr1 type2">Get the best BBQ in your life</h3>
     </div>
 
     <!-- ******************* -->
@@ -62,46 +65,50 @@
        <div class="row">
          <div class="col-md-8">
            <div class="flexFade flexslider loading-slider text-right">
-             <ul class="slides">
+
+               <ul class="slides">
+                   {% for food in foods %}
                <li>
-                 <div class="descArea">
-                   <h4>Hot from<br>the Grill</h4>
-                   <hr>
-                   <h5>Fire roasted T-Bone Steak with fries</h5>
-                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                     tempor incididunt
-                   </p>
-                   <span class="price"><em>$</em>11<span>99</span></span>
+                     <div class="descArea">
+                       <h4>Choose from<br>{{ food.category }}</h4>
+                       <hr>
+                       <h5>{{ food.title }}</h5>
+                       <p>
+                         {{ food.description }}
+                       </p>
+{#                       <span class="price"><em>$</em>11<span>99</span></span>#}
 
                  </div>
                  <div class="roundedImg" data-size="320">
-                   <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/photo-3.jpg" alt=" ">
+                   <img class="media-object" src="{{ food.photo.url }}" alt=" ">
                  </div>
-               </li>
-               <li>
-                 <div class="descArea">
-                   <h4>Our <br>Starters</h4>
-                   <hr>
-                   <h5>Rib Eye Burger with homemade sauce</h5>
-                   <p>
-                     Pellentesque eget augue et ipsum laoreet ultrices eget ut est. Donec tincidunt justo nec lobortis molestie.
-                   </p>
-                   <span class="price"><em>$</em>9<span>99</span></span>
+                </li>
 
-                 </div>
-                 <div class="roundedImg" data-size="320">
-                   <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/photo-4.jpg" alt=" ">
-                 </div>
-               </li>
+{#               <li>#}
+{#                 <div class="descArea">#}
+{#                   <h4>Our <br>Starters</h4>#}
+{#                   <hr>#}
+{#                   <h5>Rib Eye Burger with homemade sauce</h5>#}
+{#                   <p>#}
+{#                     Pellentesque eget augue et ipsum laoreet ultrices eget ut est. Donec tincidunt justo nec lobortis molestie.#}
+{#                   </p>#}
+{#                   <span class="price"><em>$</em>9<span>99</span></span>#}
+{##}
+{#                 </div>#}
+{#                 <div class="roundedImg" data-size="320">#}
+{#                   <img class="media-object" src="{% static 'flavours/bigsmokebbq/images/content/photo-4.jpg' %}" alt=" ">#}
+{#                 </div>#}
+{#               </li>#}
+                   {% endfor %}
              </ul>
+
            </div>
          </div>
          <div class="col-md-4">
            <h4 class="hdr7">About Us</h4>
 
            <div class="roundedImg pull-right" data-size="160">
-             <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/photo-5.jpg" alt=" ">
+             <img class="media-object" src="{% static 'images/motorbike-touring.jpg'%}" alt=" ">
            </div>
            <p class="bigger highlighted">
              Hello Foody! We have traveled countless miles, hundreds of sailing through storms to find out where is the best and freshest food in the world.
@@ -124,63 +131,73 @@
 <div class="container">
 
   <div class="text-center">
-    <img src="./assets/flavours/bigsmokebbq/images/content/photo-2.png" alt=" ">
+    <img src="{% static 'flavours/bigsmokebbq/images/content/photo-2.png' %}" alt=" ">
   </div>
   <br>
 
   <h3 class="hdr4">Our recommendations</h3>
 
   <div class="row">
-    <div class="col-md-4 col-sm-6">
-      <div class="prodBox pull-left">
-        <div class="frameImg"><img src="./assets/flavours/bigsmokebbq/images/content/product-1.jpg" alt=" "></div>
+       {% for food in foods %}
+        {% if food.id == 1 %}
+            <div class="col-md-4 col-sm-6">
+            <div class="prodBox pull-left">
+        <div class="frameImg"><img src="{{ food.photo.url }}" alt=" "></div>
 
         <div class="inner">
-          <h4>Slow grilled pulled pork sandwich</h4>
+          <h4>{{ food.title }}</h4>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu.
+          <p>{{ food.description }}
           </p>
-          <span class="price"><small>just</small><em>$</em>11<span>99</span></span>
-          <a href="#" class="btn btn-primary btn-sm">order now!</a>
-        </div>
-      </div>
+{#          <span class="price"><small>just</small><em>$</em>11<span>99</span></span>#}
+{#          <a href="#" class="btn btn-primary btn-sm">order now!</a>#}
+            </div>
+            </div>
+            </div>
       <!-- / prodBox -->
-    </div>
-    <div class="col-md-4 col-sm-6">
+
+        {% elif food.id == 2 %}
+            <div class="col-md-4 col-sm-6">
+
       <div class="prodBox type2">
-        <div class="frameImg"><img src="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" alt=" "></div>
+        <div class="frameImg"><img src="{{ food.photo.url }}" alt=" "></div>
 
         <div class="inner">
-          <h4>Rib Eye Burger with homemade sauce</h4>
+          <h4>{{ food.title }}</h4>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius Lorem, consectetur adipisicing elit, sed do eiu.
+          <p>
+              {{ food.description }}
           </p>
-          <span class="price"><small>just</small><em>$</em>9<span>99</span></span>
-          <a href="#" class="btn btn-primary btn-sm">order now!</a>
+{#          <span class="price"><small>just</small><em>$</em>9<span>99</span></span>#}
+{#          <a href="#" class="btn btn-primary btn-sm">order now!</a>#}
         </div>
       </div>
+
       <!-- / prodBox -->
     </div>
-    <div class="clearfix visible-sm"></div>
-    <div class="col-md-4 col-sm-12">
-      <div class="prodBox type3 pull-right">
-        <div class="frameImg"><img src="./assets/flavours/bigsmokebbq/images/content/product-3.jpg" alt=" "></div>
+        {% elif food.id == 3 %}
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-4 col-sm-12">
+              <div class="prodBox type3 pull-right">
+                <div class="frameImg"><img src="{{ food.photo.url }}" alt=" "></div>
 
-        <div class="inner">
-          <h4>Black Angus Steak with coleslaw</h4>
+                <div class="inner">
+                  <h4>{{ food.title }}</h4>
 
-          <p>Lorem ipsum dolor sit amet, consectetudo eius Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu.</p>
-          <span class="price"><small>just</small><em>$</em>9<span>99</span></span>
-          <a href="#" class="btn btn-primary btn-sm">order now!</a>
-        </div>
-      </div>
-      <!-- / prodBox -->
-    </div>
+                  <p>{{ food.description }}</p>
+        {#          <span class="price"><small>just</small><em>$</em>9<span>99</span></span>#}
+        {#          <a href="#" class="btn btn-primary btn-sm">order now!</a>#}
+                </div>
+              </div>
+              <!-- / prodBox -->
+            </div>
+        {% endif %}
+      {% endfor %}
+  </div>
   </div>
   <!-- / row -->
   <h3 class="hdr2">Whatever you choose</h3>
-  <h4 class="hdr3">Be 100% sure, that our Food is entirely made of biological ingredients</h4>
+  <h4 class="hdr3">Be 100% sure, that our Food is entirely made of fresh ingredients</h4>
 
 </div>
 </div>

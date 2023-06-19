@@ -7,9 +7,9 @@
         <h4>Contact</h4>
 
         <p>
-          Atlantic Avenue 1234,<br><br>
-          New York, NY<br><br>
-          123 - 456 - 7891<br><br>
+          Street street 1234,<br><br>
+          Varna, Bulgaria<br><br>
+          +359 1234567890<br><br>
           <a href="mailto:hello@bigsmoke.com">hello@bigsmoke.com</a>
         </p>
         <hr>
@@ -44,10 +44,12 @@
 
       </div>
       <div class="col-md-3">
-        <h4>Latest Tweets</h4>
+        <h4>Latest Articles</h4>
 
         <div class="tweets">
-          <div style="display:none">here will be displayed live tweets, configuration is placed in /twitter/config.php</div>
+          {% for article in articles %}
+              <p class="article_footer">{{ article.title }}</p>
+          {% endfor %}
         </div>
       </div>
     </div>

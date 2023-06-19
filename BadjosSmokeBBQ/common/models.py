@@ -3,5 +3,6 @@ from django.db import models
 
 class Message(models.Model):
     # subject = models.CharField(max_length=100)
+    sender_name = models.CharField()
     message = models.TextField()
-    sender = models.EmailField()
+    sender_email = models.EmailField()

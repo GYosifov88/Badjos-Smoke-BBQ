@@ -6,3 +6,7 @@ class Message(models.Model):
     sender_name = models.CharField()
     message = models.TextField()
     sender_email = models.EmailField()
+
+
+class Newsletter(models.Model):
+    email = models.EmailField()

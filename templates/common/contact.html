@@ -10,7 +10,7 @@
 </div>
 
 <div class="bg-2 section" id="contact">
-  <div class="inner" data-topspace="50" data-bottomspace="20" data-image="./assets/flavours/bigsmokebbq/images/content/background-6.jpg">
+  <div class="inner" data-topspace="50" data-bottomspace="20" data-image="{% static 'flavours/bigsmokebbq/images/content/background-6.jpg' %}">
 
     <div class="container">
 
@@ -24,31 +24,38 @@
           <div class="col-md-5">
             <h4 class="hdr2 special">Email Us</h4>
 
-            <form class="simpleForm" action="{% static 'form/form.php' %}" method="post">
+            <form class="simpleForm" action="{% url 'contacts' %}" method="post">
+
               <fieldset>
-                <div class="form-group">
-                  <label>Your name</label>
-                  <input type="text" class="form-control" name="field_[]" placeholder="enter your name">
-                </div>
-                <div class="form-group">
-                  <label>E-mail address</label>
-                  <input type="email" required class="form-control" name="email" placeholder="enter your e-mail address">
-                </div>
-                <div class="form-group">
-                  <label>Your message</label>
-                  <textarea class="form-control" rows="5" name="field_[]" placeholder="type your message"></textarea>
-                </div>
-                <input type="hidden" name="msg_subject" value="Contact Form">
-                <input type="hidden" name="field_[]" value=" ">
+                  {{ contact_form.as_p }}
+{#                <div class="form-group">#}
+{#                  <label>Your name</label>#}
+{#                  <input type="text" class="form-control" name="field_[]" placeholder="enter your name">#}
+{#                </div>#}
+{#                <div class="form-group">#}
+{#                  <label>E-mail address</label>#}
+{#                  <input type="email" required class="form-control" name="email" placeholder="enter your e-mail address">#}
+{#                </div>#}
+{#                <div class="form-group">#}
+{#                  <label>Your message</label>#}
+{#                  <textarea class="form-control" rows="5" name="field_[]" placeholder="type your message"></textarea>#}
+{#                </div>#}
+{#                <input type="hidden" name="msg_subject" value="Contact Form">#}
+{#                <input type="hidden" name="field_[]" value=" ">#}
                 <input class="btn btn-default" type="submit" value="Submit">
+
+                {% csrf_token %}
               </fieldset>
             </form>
-            <div class="successMsg" style="display:none;">
-               Message has been sent successfully!
-            </div>
-            <div class="errorMsg" style="display:none;">
-              An error occurred, please try again later.
-            </div>
+              {% if messages %}
+                <div class="successMsg" style="display:none;">
+                   Message has been sent successfully!
+                </div>
+               {% else %}
+                <div class="errorMsg" style="display:none;">
+                  An error occurred, please try again later.
+                </div>
+              {% endif %}
 
           </div>
           <div class="col-md-2">
@@ -57,19 +64,23 @@
             <h4 class="hdr2 special">Newsletter</h4>
 
             <p>
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+              If you want to know where we are going to be and receive interesting things, subscribe for our
+                newsletter
             </p>
 
-            <form class="newsletterForm simpleForm" action="{% static 'form/form.php' %}" method="post">
-              <fieldset>
-                <div class="form-group">
-                  <input class="form-control" type="email" name="email" required placeholder="enter your e-mail address">
-                </div>
-                <input type="hidden" name="msg_subject" value="New Newsletter subscription">
-                <input type="hidden" name="field_[]" value=" ">
+            <form class="newsletterForm simpleForm" action="{% url 'contacts' %}" method="post">
+                {{ newsletter_form.as_p }}
+                {% csrf_token %}
+{#              <fieldset>#}
+{#                <div class="form-group">#}
+{#                  <input class="form-control" type="email" name="email" required placeholder="enter your e-mail address">#}
+{#                </div>#}
+{#                <input type="hidden" name="msg_subject" value="New Newsletter subscription">#}
+{#                <input type="hidden" name="field_[]" value=" ">#}
                 <input class="btn btn-default" type="submit" value="Submit">
-              </fieldset>
+{#              </fieldset>#}
             </form>
+
             <div class="successMsg" style="display:none;">
                Your e-mail has been added to our list!
             </div>

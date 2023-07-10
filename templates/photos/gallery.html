@@ -8,48 +8,50 @@
     <div class="container">
 
       <h3 class="hdr4">Have a look in our gallery!</h3>
-
       <ul class="galleryContainer row">
+
         <li class="col-md-3 col-sm-6">
+
           <div class="galleryBox">
             <div class="top">
               <span>Street-Life</span>
             </div>
             <div class="inner">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-1.jpg" data-rel="prettyPhoto[gallery1]">
-                <img src="./assets/flavours/bigsmokebbq/images/content/gallery-01.jpg" alt=" ">
-
-                <div><span>3 images</span></div>
+              <a href="{{ street_life_first.photo.url }}" data-rel="prettyPhoto[gallery1]">
+                <img src="{{ street_life_first.photo.url }}" alt=" ">
+                <div><span>{{ street_life_numbers }} images</span></div>
               </a>
             </div>
+              {% for pic in street_life_pictures %}
             <div class="hiddenGallery">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" data-rel="prettyPhoto[gallery1]" title="Title goes here">
-                <img src="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" alt=" ">
-              </a>
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-3.jpg" data-rel="prettyPhoto[gallery1]" title="Title goes here">
-                <img src="./assets/flavours/bigsmokebbq/images/content/product-3.jpg" alt=" ">
+              <a href="{{ pic.photo.url }}" data-rel="prettyPhoto[gallery1]" title="{{ pic.title }}">
+                <img src="{{ pic.photo.url }}" alt=" ">
               </a>
             </div>
+            {% endfor %}
           </div>
           <!-- / galleryBox -->
         </li>
+
         <li class="col-md-3 col-sm-6">
           <div class="galleryBox">
             <div class="top">
               <span>Kitchen-Life</span>
             </div>
             <div class="inner">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-1.jpg" data-rel="prettyPhoto[gallery2]">
-                <img src="./assets/flavours/bigsmokebbq/images/content/gallery-02.jpg" alt=" ">
+              <a href="{{ kitchen_life_first.photo.url }}" data-rel="prettyPhoto[gallery2]">
+                <img src="{{ kitchen_life_first.photo.url }}" alt=" ">
 
-                <div><span>2 images</span></div>
+                <div><span>{{ kitchen_life_numbers }} images</span></div>
               </a>
             </div>
-            <div class="hiddenGallery">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" data-rel="prettyPhoto[gallery2]" title="Title goes here">
-                <img src="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" alt=" ">
-              </a>
-            </div>
+              {% for pic in kitchen_life_pictures %}
+                <div class="hiddenGallery">
+                  <a href="{{ pic.photo.url }}" data-rel="prettyPhoto[gallery2]" title="{{ pic.title }}">
+                    <img src="{{ pic.photo.url }}" alt=" ">
+                  </a>
+                </div>
+              {% endfor%}
           </div>
           <!-- / galleryBox -->
         </li>
@@ -59,20 +61,19 @@
               <span>Events</span>
             </div>
             <div class="inner">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-1.jpg" data-rel="prettyPhoto[gallery3]">
-                <img src="./assets/flavours/bigsmokebbq/images/content/gallery-03.jpg" alt=" ">
+              <a href="{{ events_first.photo.url }}" data-rel="prettyPhoto[gallery3]">
+                <img src="{{ events_first.photo.url }}" alt=" ">
 
-                <div><span>3 images</span></div>
+                <div><span>{{ events_numbers }} images</span></div>
               </a>
             </div>
+              {% for pic in events_pictures %}
             <div class="hiddenGallery">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" data-rel="prettyPhoto[gallery3]" title="Title goes here">
-                <img src="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" alt=" ">
-              </a>
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-3.jpg" data-rel="prettyPhoto[gallery3]" title="Title goes here">
-                <img src="./assets/flavours/bigsmokebbq/images/content/product-3.jpg" alt=" ">
+              <a href="{{ pic.photo.url }}" data-rel="prettyPhoto[gallery3]" title="{{ pic.title }}">
+                <img src="{{ pic.photo.url }}" alt=" ">
               </a>
             </div>
+              {% endfor %}
           </div>
           <!-- / galleryBox -->
         </li>
@@ -82,22 +83,23 @@
               <span>Food</span>
             </div>
             <div class="inner">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-1.jpg" data-rel="prettyPhoto[gallery4]">
-                <img src="./assets/flavours/bigsmokebbq/images/content/gallery-04.jpg" alt=" ">
+              <a href="{{ foods_first.photo.url }}" data-rel="prettyPhoto[gallery4]">
+                <img src="{{ foods_first.photo.url }}" alt=" ">
 
-                <div><span>2 images</span></div>
+                <div><span>{{ foods_numbers }} images</span></div>
               </a>
             </div>
+              {% for pic in foods_pictures %}
             <div class="hiddenGallery">
-              <a href="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" data-rel="prettyPhoto[gallery4]" title="Title goes here">
-                <img src="./assets/flavours/bigsmokebbq/images/content/product-2.jpg" alt=" ">
+              <a href="{{ pic.photo.url }}" data-rel="prettyPhoto[gallery4]" title="{{ pic.title }}">
+                <img src="{{ pic.photo.url }}" alt=" ">
               </a>
             </div>
+              {% endfor %}
           </div>
           <!-- / galleryBox -->
         </li>
       </ul>
-
 
       <h4 class="hdr3">Follow us on instagram!</h4>
 
@@ -106,7 +108,7 @@
 
       <div class="text-center">
         <a href="#" target="_blank">
-          <img src="./assets/flavours/bigsmokebbq/images/instagram-btn.png" alt="">
+          <img src="{% static 'flavours/bigsmokebbq/images/instagram-btn.png' %}" alt="">
         </a>
       </div>
       <br><br>

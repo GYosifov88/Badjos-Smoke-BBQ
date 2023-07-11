@@ -63,6 +63,7 @@ class Article(StrFromFieldsMixin, models.Model):
 
 class ArticleComment(models.Model):
     MAX_TEXT_LENGTH = 300
+    MAX_NAME_LENGTH = 60
     text = models.CharField(
         max_length=MAX_TEXT_LENGTH,
         null=False,
@@ -72,6 +73,17 @@ class ArticleComment(models.Model):
         auto_now_add=True,
         blank=True,
         null=False,
+    )
+
+    commentor_name = models.CharField(
+        max_length=MAX_NAME_LENGTH,
+        null=False,
+        blank=False,
+    )
+
+    commentor_email = models.EmailField(
+        null=False,
+        blank=False,
     )
 
     article = models.ForeignKey(

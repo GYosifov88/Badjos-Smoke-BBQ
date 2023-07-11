@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-md-8 blog-main">
             <div class="inner">
-                {% for article in articles %}
+                {% for article in page_obj %}
               <div class="blog-post">
                 <h3 class="blog_title"><a href="{% url 'article details' pk=article.pk %}">{{ article.title }}</a></h3>
                 <div class="blog_thumbnail">
@@ -146,22 +146,22 @@
 {#              <hr class="dashed-separator">#}
 
               <div class="text-center">
-                {% if articles.has_other_pages %}
+                {% if page_obj.has_other_pages %}
                     <ul class="pagination">
-                        {% if articles.has_previous %}
-                            <li><a href="?page={{ articles.previous_page_number }}"><i class="fa fa-arrow-left"></i>Previous Page</a></li>
+                        {% if page_obj.has_previous %}
+                            <li><a href="?page={{ page_obj.previous_page_number }}"><i class="fa fa-arrow-left"></i>Previous Page</a></li>
                         {% else %}
                             <li class="disabled"><a href="#"><i class="fa fa-arrow-left"></i>Previous Page</a></li>
                         {% endif %}
-                    {% for p in articles.paginator.page_range %}
-                        {% if articles.number == p %}
+                    {% for p in page_obj.paginator.page_range %}
+                        {% if page_obj.number == p %}
                             <li class="active"><a href="#">{{ p }} <span class="sr-only">(current)</span></a></li>
-                        {% elif p > articles.number|add:'-3' and p < articles.number|add:'3' %}
+                        {% elif p > page_obj.number|add:'-3' and p < page_obj.number|add:'3' %}
                             <li class="active"><a href="?page={{ p }}">{{ p }} <span class="sr-only"></span></a></li>
                         {% endif %}
                     {% endfor %}
-                        {% if articles.has_next %}
-                            <li><a href="?page={{ articles.next_page_number }}">Next Page<i class="fa fa-arrow-right"></i></a></li>
+                        {% if page_obj.has_next %}
+                            <li><a href="?page={{ page_obj.next_page_number }}">Next Page<i class="fa fa-arrow-right"></i></a></li>
                         {% else %}
                             <li class="disabled"><a href="#">Next Page<i class="fa fa-arrow-right"></i></a></li>
                         {% endif %}

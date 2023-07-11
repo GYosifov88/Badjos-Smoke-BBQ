@@ -44,7 +44,7 @@
 
       <div class="tweets">
           {% for article in articles %}
-              <p class="article">{{ article.title }}</p>
+              <p class="article"><a href="{% url 'article details' pk=article.pk %}">{{ article.title }}</a></p>
           {% endfor %}
 {#        <div style="display:none">here will be displayed live tweets, configuration is placed in /twitter/config.php</div>#}
       </div>

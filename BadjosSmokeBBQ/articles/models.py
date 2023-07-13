@@ -15,7 +15,6 @@ class ArticleCategory(ChoicesEnumMixin, Enum):
     beverages = 'Beverages'
     experiments = 'Experiments'
     events = 'Events'
-    internal = 'Internal'
     the_rest = 'The Rest'
 
 
@@ -60,40 +59,3 @@ class Article(StrFromFieldsMixin, models.Model):
     #     on_delete=models.RESTRICT,
     # )
 
-
-class ArticleComment(models.Model):
-    MAX_TEXT_LENGTH = 300
-    MAX_NAME_LENGTH = 60
-    text = models.CharField(
-        max_length=MAX_TEXT_LENGTH,
-        null=False,
-        blank=False,)
-
-    publication_date_and_time = models.DateTimeField(
-        auto_now_add=True,
-        blank=True,
-        null=False,
-    )
-
-    commentor_name = models.CharField(
-        max_length=MAX_NAME_LENGTH,
-        null=False,
-        blank=False,
-    )
-
-    commentor_email = models.EmailField(
-        null=False,
-        blank=False,
-    )
-
-    article = models.ForeignKey(
-        Article,
-        on_delete=models.RESTRICT,
-        null=False,
-        blank=True,
-    )
-
-    # user = models.ForeignKey(
-    #     UserModel,
-    #     on_delete=models.RESTRICT,
-    # )

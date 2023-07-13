@@ -10,175 +10,26 @@
 <div class="col-md-8 blog-main">
   <div class="inner">
     <div class="blog-post">
-      <h3 class="blog_title">We got a new Truck!</h3>
+      <h3 class="blog_title">{{ article.title }}</h3>
 
       <div class="blog_thumbnail">
-        <img src="./assets/flavours/bigsmokebbq/images/content/post1.jpg" alt=" ">
+        <img src="{{ article.photo.url }}" alt=" ">
                     <span class="ribbon_details">
-                      <span class="ribbon_details_date">Nov <br>15</span>
-                      <span class="ribbon_details_comments">12 <i class="fa fa-comments"></i></span>
+                      <span class="ribbon_details_date">{{ article.publication_date }}</span>
                     </span>
       </div>
       <div class="meta_box">
-        <span class="meta_date">November 15, 2013</span>
-        <span class="meta_comments"><a href="#"><em>12</em> <span>Comments</span></a></span>
-        <span class="meta_author"><a href="#">by John Doe</a></span>
+        <span class="meta_date">{{ article.publication_date }}</span>
+        <span class="meta_author"><a href="#">{{ article.author }}</a></span>
       </div>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-        semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-      </p>
-
-      <p>
-        Consectetur adipiscing elit. Quisque scelerisque libero id vehicula ultricies. Mauris eget eros eget nisi accumsan molestie et et lectus. Aliquam in augue odio. Praesent vestibulum nulla sapien, quis fermentum
-        felis vulputate sit amet. Praesent sit amet turpis id libero tincidunt imperdiet. Morbi ut ultrices neque. In quis metus ligula. Aenean elementum gravida nisl nec ullamcorper. Cras dignissim orci vehicula, dictum
-        purus in, suscipit augue. Nulla ut massa nisi. Duis eu ornare sapien. Ut sed neque rhoncus, ornare erat vestibulum, ultricies ligula. Integer ut sapien semper, vehicula nisi et, faucibus orci. Vivamus sit amet
-        egestas velit, quis hendrerit est.
-      </p>
-      <blockquote class="type2">
-        <p>
-          Pellentesque purus lectus, iaculis id ultricies laoreet, auctor quis lacus. Vivamus feugiat cursus suscipit. Phasellus semper auctor hendrerit. In malesuada vehicula sem id ultrices. Nunc ut lorem malesuada
-          vulputate. Nulla vel nisl velit, et rutrum magna. Aliquam eu mauris nisi, sit amet rutrum nulla.
-        </p>
-        <span class="author">- Floyd Rose CEO, Burger Lover-</span>
-      </blockquote>
-      <p>
-        Integer accumsan pellentesque augue, sit amet commodo ipsum accumsan sed. Nulla scelerisque ipsum ut nisi dictum, sit amet viverra quam suscipit. Quisque vel odio ut eros ornare blandit. Maecenas sed consequat
-        sem, a mollis magna. Nulla hendrerit nibh lobortis, tincidunt risus sit amet, facilisis enim. Integer mattis diam posuere tortor varius, at imperdiet felis dapibus. Pellentesque varius velit vel mauris blandit
-        suscipit. Suspendisse aliquam odio libero, ut dapibus leo varius et. Ut dapibus facilisis ipsum, a convallis est lacinia nec. Pellentesque volutpat neque ac vehicula malesuada. Etiam vestibulum tincidunt erat et
-        viverra. Sed quis diam augue.
-      </p>
-      <h5>Lorem ipsum dolor sit amet</h5>
-
-      <p>
-        Vestibulum ut iaculis metus. Vivamus hendrerit neque faucibus, ultrices enim ut, cursus mi. Sed erat ante, congue sit amet tincidunt nec, vestibulum id augue. Vestibulum dignissim urna eu arcu tincidunt
-        vulputate. Ut dolor nunc, pulvinar eu pharetra non, mollis vitae eros. Vivamus non neque vitae orci vulputate rhoncus sed in est. In accumsan auctor imperdiet. Aliquam venenatis rhoncus felis ac volutpat. Nunc
-        feugiat lobortis magna a consequat.
-      </p>
-
-      <p>
-        Vivamus vehicula, sem vitae consequat suscipit, <span class="highlight type3" data-toggle="tooltip" data-placement="top" title="This is tooltip description">nunc augue laoreet nulla</span>, sed vehicula dui
-        sapien in sem. Nullam non facilisis diam. Aliquam sed velit in erat venenatis malesuada at non augue. Duis dapibus nisl vel ultricies rutrum. Integer sit amet pretium elit, eu lacinia metus.
-        <span class="highlight type2" data-toggle="tooltip" data-placement="top" title="This is tooltip description">Vestibulum aliquet</span> eu justo vitae semper. In dapibus tempus lorem, quis accumsan dui. Ut
-        lobortis orci in velit vulputate, at dictum dolor scelerisque. <span class="highlight type1" data-toggle="tooltip" data-placement="top" title="This is tooltip description">Duis id velit est</span>. Integer non
-        arcu vitae leo elementum lacinia. Integer id quam eu felis faucibus rhoncus. Donec euismod porttitor nibh sit amet tempor. Donec at sem rutrum, euismod metus quis, ultrices sem.
-      </p>
-      <ul class="list-icons list-unstyled">
-        <li><i class="fa fa-circle"></i>Pellentesque purus lectus, iaculis id</li>
-        <li><i class="fa fa-circle"></i>Ultricies laoreet, auctor quis lacus.</li>
-        <li><i class="fa fa-circle"></i>Vivamus feugiat cursus suscipit.</li>
-      </ul>
-      <p>
-        Nulla at gravida nisi, et blandit tortor. Suspendisse lorem mauris, auctor at egestas viverra, consectetur non elit. Praesent ut orci faucibus, dictum arcu et, gravida urna. Fusce feugiat ullamcorper varius.
-        Aliquam bibendum nibh eget diam feugiat ullamcorper. Cras lacinia sed libero sit amet dictum. Etiam justo mi, commodo fringilla tortor id, facilisis vehicula lorem. Duis hendrerit dolor vel luctus ultrices.
-      </p>
+      <p id="exp">{{ article.description }}</p>
 
       <div class="space50px"></div>
-      <h4>Comments</h4>
-
-      <ul class="commentList list-unstyled">
-        <li>
-          <div class="oneComment">
-            <div class="media">
-              <a class="pull-left roundedImg" href="#">
-                <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/testimonial-1.jpg" alt=" ">
-              </a>
-              <div class="media-body">
-                Maria Jessica Turner<br>
-                March 25, 2013 at 1:38 pm
-                <a href="#" class="comment-reply-link pull-right">Reply</a>
-              </div>
-            </div>
-            <p>
-              Donec tincidunt interdum arcu, ut volutpat urna tincidunt quis. Proin varius leo ut quam egestas rutrum. Donec faucibus mattis porta. Cras quis eros sit amet dui congue vehicula. Vivamus sit amet lacus
-              lorem, eget congue orci. Donec at tellus eget mauris cursus interdum.
-            </p>
-          </div>
-          <!-- / oneComment -->
-          <ol class="children">
-
-            <li>
-              <div class="oneComment">
-                <div class="media">
-                  <a class="pull-left roundedImg" href="#">
-                    <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/testimonial-1.jpg" alt=" ">
-                  </a>
-                  <div class="media-body">
-                    Maria Jessica Turner<br>
-                    March 25, 2013 at 1:38 pm
-                    <a href="#" class="comment-reply-link pull-right">Reply</a>
-                  </div>
-                </div>
-                <p>
-                  Donec tincidunt interdum arcu, ut volutpat urna tincidunt quis. Proin varius leo ut quam egestas rutrum. Donec faucibus mattis porta. Cras quis eros sit amet dui congue vehicula. Vivamus sit amet lacus
-                  lorem, eget congue orci. Donec at tellus eget mauris cursus interdum.
-                </p>
-              </div>
-              <!-- / oneComment -->
-              <ol class="children">
-
-                <li>
-                  <div class="oneComment">
-                    <div class="media">
-                      <a class="pull-left roundedImg" href="#">
-                        <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/testimonial-1.jpg" alt=" ">
-                      </a>
-                      <div class="media-body">
-                        Maria Jessica Turner<br>
-                        March 25, 2013 at 1:38 pm
-                        <a href="#" class="comment-reply-link pull-right">Reply</a>
-                      </div>
-                    </div>
-                    <p>
-                      Donec tincidunt interdum arcu, ut volutpat urna tincidunt quis. Proin varius leo ut quam egestas rutrum. Donec faucibus mattis porta. Cras quis eros sit amet dui congue vehicula. Vivamus sit amet lacus
-                      lorem, eget congue orci. Donec at tellus eget mauris cursus interdum.
-                    </p>
-                  </div>
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="oneComment">
-            <div class="media">
-              <a class="pull-left roundedImg" href="#">
-                <img class="media-object" src="./assets/flavours/bigsmokebbq/images/content/testimonial-1.jpg" alt=" ">
-              </a>
-              <div class="media-body">
-                Maria Jessica Turner<br>
-                March 25, 2013 at 1:38 pm
-                <a href="#" class="comment-reply-link pull-right">Reply</a>
-              </div>
-            </div>
-            <p>
-              Donec tincidunt interdum arcu, ut volutpat urna tincidunt quis. Proin varius leo ut quam egestas rutrum. Donec faucibus mattis porta. Cras quis eros sit amet dui congue vehicula. Vivamus sit amet lacus
-              lorem, eget congue orci. Donec at tellus eget mauris cursus interdum.
-            </p>
-          </div>
-        </li>
-      </ul>
 
       <div class="space50px"></div>
-      <h4>Leave a comment</h4>
 
-      <form class="simpleForm" action="./assets/form/form.php" method="post">
-        <fieldset>
-          <div class="form-group">
-            <label class="label-sm">Your name</label>
-            <input type="text" class="form-control input-sm" name="field_[]" placeholder="enter your name">
-          </div>
-          <div class="form-group">
-            <label class="label-sm">Your email</label>
-            <input type="email" required class="form-control input-sm" name="email" placeholder="enter your e-mail address">
-          </div>
-          <div class="form-group">
-            <label class="label-sm">Your message</label>
-            <textarea class="form-control input-sm" rows="5" name="field_[]" placeholder="type your message"></textarea>
-          </div>
-          <input class="btn btn-default" type="submit" value="Submit">
-        </fieldset>
-      </form>
+
+
 
 
     </div>
@@ -186,89 +37,88 @@
 
   </div>
   <!-- / inner -->
-</div>
-<div class="col-md-4 blog-sidebar">
-  <div class="widget widget_categories">
-    <h3>Blog Categories</h3>
-    <ul>
-      <li class="active"><a href="#">All</a></li>
-      <li><a href="#">Food</a></li>
-      <li><a href="#">Beverages</a></li>
-      <li><a href="#">Experiments</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Internal</a></li>
-      <li><a href="#">The rest</a></li>
-    </ul>
-  </div>
+        </div>
+        <div class="col-md-4 blog-sidebar">
+            <div class="widget widget_categories">
+              <h3>Blog Categories</h3>
+              <ul>
+                <li class="active"><a href="{% url 'articles' %}">All</a></li>
+                <li><a href="{% url 'categories' category='food' %}">Food</a></li>
+                <li><a href="{% url 'categories' category='beverages' %}">Beverages</a></li>
+                <li><a href="{% url 'categories' category='experiments' %}">Experiments</a></li>
+                <li><a href="{% url 'categories' category='events' %}">Events</a></li>
+                <li><a href="{% url 'categories' category='the_rest' %}">The rest</a></li>
+              </ul>
+        </div>
 
-  <div class="widget">
-    <h3>Tab Styles</h3>
+{#  <div class="widget">#}
+{#    <h3>Tab Styles</h3>#}
+{##}
+{#    <!-- Nav tabs -->#}
+{#    <ul class="nav nav-tabs nav-justified">#}
+{#      <li class="active"><a href="#tab1" data-toggle="tab">Popular</a></li>#}
+{#      <li><a href="#tab2" data-toggle="tab">Latest</a></li>#}
+{#      <li><a href="#tab3" data-toggle="tab">Random</a></li>#}
+{#    </ul>#}
+{##}
+{#    <!-- Tab panes -->#}
+{#    <div class="tab-content">#}
+{#      <div class="tab-pane active fade in" id="tab1">#}
+{#        <ul>#}
+{#          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>#}
+{#          <li><a href="#">Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</a></li>#}
+{#          <li><a href="#">Vestibulum tortor quam, feugiat vitae, ultricies eget.</a></li>#}
+{#          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>#}
+{#        </ul>#}
+{##}
+{#      </div>#}
+{#      <div class="tab-pane fade" id="tab2">#}
+{#        <ul>#}
+{#          <li><a href="#">Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</a></li>#}
+{#          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>#}
+{#          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>#}
+{#          <li><a href="#">Vestibulum tortor quam, feugiat vitae, ultricies eget.</a></li>#}
+{#        </ul>#}
+{##}
+{#      </div>#}
+{#      <div class="tab-pane fade" id="tab3">#}
+{#        <ul>#}
+{#          <li><a href="#">Quisque sit amet est et sapien ullamcorper pharetra.</a></li>#}
+{#          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>#}
+{#          <li><a href="#">Vestibulum tortor quam, feugiat vitae, ultricies eget.</a></li>#}
+{#          <li><a href="#">Pellentesque habitant morbi tristique senectus et. Mauris placerat eleifend leo.</a></li>#}
+{#        </ul>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
 
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs nav-justified">
-      <li class="active"><a href="#tab1" data-toggle="tab">Popular</a></li>
-      <li><a href="#tab2" data-toggle="tab">Latest</a></li>
-      <li><a href="#tab3" data-toggle="tab">Random</a></li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div class="tab-pane active fade in" id="tab1">
-        <ul>
-          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>
-          <li><a href="#">Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</a></li>
-          <li><a href="#">Vestibulum tortor quam, feugiat vitae, ultricies eget.</a></li>
-          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>
-        </ul>
-
-      </div>
-      <div class="tab-pane fade" id="tab2">
-        <ul>
-          <li><a href="#">Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</a></li>
-          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>
-          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>
-          <li><a href="#">Vestibulum tortor quam, feugiat vitae, ultricies eget.</a></li>
-        </ul>
-
-      </div>
-      <div class="tab-pane fade" id="tab3">
-        <ul>
-          <li><a href="#">Quisque sit amet est et sapien ullamcorper pharetra.</a></li>
-          <li><a href="#">Pellentesque habitant morbi tristique senectus et.</a></li>
-          <li><a href="#">Vestibulum tortor quam, feugiat vitae, ultricies eget.</a></li>
-          <li><a href="#">Pellentesque habitant morbi tristique senectus et. Mauris placerat eleifend leo.</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="widget">
-    <h3>Twitter Widget</h3>
-
-    <div class="tweets">
-      <ul class="tweet_list">
-        <li>
-                        <span class="tweet_text">
-                          <a href="#">@BL</a> Were loaded with nice flavours <a href="#">http://d.g/4XHGZpGZ</a>
-                        </span>
-          <span class="tweet_time"><a href="#">about 2 minutes ago</a></span>
-        </li>
-        <li>
-                        <span class="tweet_text">
-                          <a href="#">@BL</a> Today we will be @ gordonspark <a href="#">http://g.g/3ZFBZpGK</a>
-                        </span>
-          <span class="tweet_time"><a href="#">about 6 hours ago</a></span>
-        </li>
-        <li>
-                        <span class="tweet_text">
-                          <a href="#">@BL.</a> Our Burger got nominated! Best Burger in Town <a href="#">http://g.ho/3HZD7pJK</a>
-                        </span>
-          <span class="tweet_time"><a href="#">about 7 hours ago</a></span>
-        </li>
-      </ul>
-    </div>
-    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-twitter"></i> follow us</a>
-  </div>
+{#  <div class="widget">#}
+{#    <h3>Twitter Widget</h3>#}
+{##}
+{#    <div class="tweets">#}
+{#      <ul class="tweet_list">#}
+{#        <li>#}
+{#                        <span class="tweet_text">#}
+{#                          <a href="#">@BL</a> Were loaded with nice flavours <a href="#">http://d.g/4XHGZpGZ</a>#}
+{#                        </span>#}
+{#          <span class="tweet_time"><a href="#">about 2 minutes ago</a></span>#}
+{#        </li>#}
+{#        <li>#}
+{#                        <span class="tweet_text">#}
+{#                          <a href="#">@BL</a> Today we will be @ gordonspark <a href="#">http://g.g/3ZFBZpGK</a>#}
+{#                        </span>#}
+{#          <span class="tweet_time"><a href="#">about 6 hours ago</a></span>#}
+{#        </li>#}
+{#        <li>#}
+{#                        <span class="tweet_text">#}
+{#                          <a href="#">@BL.</a> Our Burger got nominated! Best Burger in Town <a href="#">http://g.ho/3HZD7pJK</a>#}
+{#                        </span>#}
+{#          <span class="tweet_time"><a href="#">about 7 hours ago</a></span>#}
+{#        </li>#}
+{#      </ul>#}
+{#    </div>#}
+{#    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-twitter"></i> follow us</a>#}
+{#  </div>#}
 
 </div>
 </div>

@@ -12,11 +12,11 @@
         <div class="row">
           <div class="col-md-8 blog-main">
             <div class="inner">
-                {% for article in articles %}
+                {% for article in articles_all %}
               <div class="blog-post">
-                <h3 class="blog_title"><a href="{% url 'article details' pk=article.pk %}">{{ article.title }}</a></h3>
+                <h3 class="blog_title"><a href="{% url 'article details' category=article.category pk=article.pk %}">{{ article.title }}</a></h3>
                 <div class="blog_thumbnail">
-                  <a href="{% url 'article details' pk=article.pk %}">
+                  <a href="{% url 'article details' category=article.category pk=article.pk %}">
                     <img src="{{ article.photo.url }}" alt=" ">
                     <span class="ribbon_details">
                       <span class="ribbon_details_date">{{ article.publication_date }}</span>
@@ -27,12 +27,12 @@
                 <div class="meta_box">
                   <span class="meta_date">{{ article.publication_date }}</span>
 {#                  <span class="meta_comments"><a href="#"><em>12</em> <span>Comments</span></a></span>#}
-                  <span class="meta_author"><a href="{% url 'article details' pk=article.pk %}">{{ article.author }}</a></span>
+                  <span class="meta_author"><a href="{% url 'article details' category=article.category pk=article.pk %}">{{ article.author }}</a></span>
                 </div>
-                <p>
+                <p class="listed">
                 {{ article.description }}
                 </p>
-                <a href="{% url 'article details' pk=article.pk %}" class="btn btn-primary btn-sm btn-blog">read more</a>
+                <a href="{% url 'article details' category=article.category pk=article.pk %}" class="btn btn-primary btn-sm btn-blog">read more</a>
               </div>
               <hr class="dashed-separator">
                 {% endfor %}
@@ -146,22 +146,22 @@
 {#              <hr class="dashed-separator">#}
 
               <div class="text-center">
-                {% if articles.has_other_pages %}
+                {% if articles_all.has_other_pages %}
                     <ul class="pagination">
-                        {% if articles.has_previous %}
-                            <li><a href="?page={{ articles.previous_page_number }}"><i class="fa fa-arrow-left"></i>Previous Page</a></li>
+                        {% if articles_all.has_previous %}
+                            <li><a href="?page={{ articles_all.previous_page_number }}"><i class="fa fa-arrow-left"></i>Previous Page</a></li>
                         {% else %}
                             <li class="disabled"><a href="#"><i class="fa fa-arrow-left"></i>Previous Page</a></li>
                         {% endif %}
-                    {% for p in articles.paginator.page_range %}
-                        {% if articles.number == p %}
+                    {% for p in articles_all.paginator.page_range %}
+                        {% if articles_all.number == p %}
                             <li class="active"><a href="#">{{ p }} <span class="sr-only">(current)</span></a></li>
-                        {% elif p > articles.number|add:'-3' and p < articles.number|add:'3' %}
+                        {% elif p > articles_all.number|add:'-3' and p < articles_all.number|add:'3' %}
                             <li class="active"><a href="?page={{ p }}">{{ p }} <span class="sr-only"></span></a></li>
                         {% endif %}
                     {% endfor %}
-                        {% if articles.has_next %}
-                            <li><a href="?page={{ articles.next_page_number }}">Next Page<i class="fa fa-arrow-right"></i></a></li>
+                        {% if articles_all.has_next %}
+                            <li><a href="?page={{ articles_all.next_page_number }}">Next Page<i class="fa fa-arrow-right"></i></a></li>
                         {% else %}
                             <li class="disabled"><a href="#">Next Page<i class="fa fa-arrow-right"></i></a></li>
                         {% endif %}
@@ -182,7 +182,6 @@
                 <li><a href="{% url 'categories' category='beverages' %}">Beverages</a></li>
                 <li><a href="{% url 'categories' category='experiments' %}">Experiments</a></li>
                 <li><a href="{% url 'categories' category='events' %}">Events</a></li>
-                <li><a href="{% url 'categories' category='internal' %}">Internal</a></li>
                 <li><a href="{% url 'categories' category='the_rest' %}">The rest</a></li>
               </ul>
             </div>

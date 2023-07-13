@@ -6,4 +6,8 @@ def get_article_url(request, article_id):
 
 
 def get_articles_by_category(category):
-    return Article.objects.filter(category=category).all()
+    return Article.objects.filter(category=category).all().order_by('-publication_date')
+
+
+def get_article_by_category_and_pk(category, pk):
+    return Article.objects.filter(category=category).filter(pk=pk).get()

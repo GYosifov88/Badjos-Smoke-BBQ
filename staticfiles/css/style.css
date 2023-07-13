@@ -2424,6 +2424,13 @@ p + .panel-group {
 .blog-post p {
   margin-bottom: 25px;
 }
+
+.listed {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 25px;
+}
 .blog-post blockquote p {
   margin-bottom: 15px;
 }

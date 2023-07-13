@@ -48,7 +48,7 @@
 
         <div class="tweets">
           {% for article in articles %}
-              <p class="article_footer">{{ article.title }}</p>
+              <p class="article_footer"><a href="{% url 'article details' category=article.category pk=article.pk %}">{{ article.title }}</a></p>
           {% endfor %}
         </div>
       </div>

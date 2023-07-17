@@ -6,18 +6,18 @@
 <!-- ** FULL WIDTH SLIDER ** -->
 
 <div class="flexFull type2 flexslider loading-slider text-center" id="location">
-  <ul class="slides">
-    <li>
-      <img src="./assets/flavours/bigsmokebbq/images/content/sliderfull-1.jpg" alt=" ">
-    </li>
-    <li>
-      <img src="./assets/flavours/bigsmokebbq/images/content/sliderfull-1.jpg" alt=" ">
-    </li>
-  </ul>
+{#  <ul class="slides">#}
+{#    <li>#}
+      <img src="{% static 'flavours/bigsmokebbq/images/content/sliderfull-1.jpg' %}" alt=" ">
+{#    </li>#}
+{#    <li>#}
+{#      <img src="./assets/flavours/bigsmokebbq/images/content/sliderfull-1.jpg" alt=" ">#}
+{#    </li>#}
+{#  </ul>#}
 </div>
 
 <div class="bg-2 section" id="story">
-  <div class="inner repeated" data-topspace="45" data-image="./assets/flavours/bigsmokebbq/images/content/background-4.jpg">
+  <div class="inner repeated" data-topspace="45" data-image="{% static 'flavours/bigsmokebbq/images/content/background-4.jpg' %}">
 
     <div class="container">
 
@@ -45,13 +45,14 @@
           <div class="col-md-6">
 
             <div class="polaroidSlider pull-right">
-              <img src="./assets/images/scotchtape.png" alt=" " class="scotchtape">
+              <img src="{% static 'images/scotchtape.png' %}" alt=" " class="scotchtape">
 
               <div class="inner">
                 <ul class="bxslider">
-                  <li><img src="./assets/flavours/bigsmokebbq/images/content/smallslider-1.jpg" alt=" "></li>
-                  <li><img src="./assets/flavours/bigsmokebbq/images/content/smallslider-1.jpg" alt=" "></li>
-                  <li><img src="./assets/flavours/bigsmokebbq/images/content/smallslider-1.jpg" alt=" "></li>
+                  <li><img src="{% static 'images/story_images/motorbike-touring.jpg' %}" alt=" "></li>
+                  <li><img src="{% static 'images/story_images/404notfound.jpeg' %}" alt=" "></li>
+                  <li><img src="{% static 'images/story_images/icon.png' %}" alt=" "></li>
+                  <li><img src="{% static 'images/story_images/are_you_sure.jpg' %}" alt=" "></li>
                 </ul>
               </div>
             </div>

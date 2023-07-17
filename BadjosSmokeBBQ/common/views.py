@@ -29,7 +29,7 @@ def index(request):
         'articles': articles,
         'photos': photos,
     }
-    return render(request, 'common/index.html', context, )
+    return render(request, 'common/index.html', context)
 
 
 def show_contact_details(request):

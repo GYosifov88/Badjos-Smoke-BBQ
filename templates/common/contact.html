@@ -42,7 +42,8 @@
 {#                </div>#}
 {#                <input type="hidden" name="msg_subject" value="Contact Form">#}
 {#                <input type="hidden" name="field_[]" value=" ">#}
-                <input class="btn btn-default" type="submit" value="Submit">
+                  <button onclick="location = self.location.href;" type="submit" class="btn btn-default">Submit</button>
+    {#                <input class="btn btn-default" type="submit" value="Submit">#}
 
                 {% csrf_token %}
               </fieldset>
@@ -77,16 +78,17 @@
 {#                </div>#}
 {#                <input type="hidden" name="msg_subject" value="New Newsletter subscription">#}
 {#                <input type="hidden" name="field_[]" value=" ">#}
-                <input class="btn btn-default" type="submit" value="Submit">
+                <button onclick="location = self.location.href;" type="submit" class="btn btn-default">Submit</button>
+{#                <input class="btn btn-default" type="submit" value="Submit">#}
 {#              </fieldset>#}
             </form>
 
-            <div class="successMsg" style="display:none;">
-               Your e-mail has been added to our list!
-            </div>
-            <div class="errorMsg" style="display:none;">
-              Error, please try again later.
-            </div>
+{#            <div class="successMsg" style="display:none;">#}
+{#               Your e-mail has been added to our list!#}
+{#            </div>#}
+{#            <div class="errorMsg" style="display:none;">#}
+{#              Error, please try again later.#}
+{#            </div>#}
 
             <div class="space50px"></div>
 

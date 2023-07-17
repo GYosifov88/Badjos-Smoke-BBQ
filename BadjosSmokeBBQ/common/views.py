@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.core.paginator import PageNotAnInteger, EmptyPage, Paginator
 from django.shortcuts import render, redirect
+from django.urls import reverse
 
 from BadjosSmokeBBQ.articles.models import Article
 from BadjosSmokeBBQ.common.forms import ContactForm, NewsletterForm
@@ -47,7 +48,7 @@ def show_contact_details(request):
                 message.user = request.user
                 message.save()
                 messages.success(request, 'Message has been sent successfully!')
-                return redirect('index')
+                return redirect(reverse('index'))
             messages.error(request, "An error occurred, please try again later.")
         elif 'newsletter_forms' in request.POST:
             newsletter_form = NewsletterForm(request.POST)
@@ -56,7 +57,7 @@ def show_contact_details(request):
                 message.user = request.user
                 message.save()
                 messages.success(request, 'Your e-mail has been added to our list!')
-                return redirect('index')
+                return redirect(reverse('index'))
             messages.error(request, "Error, please try again later.")
     # contact_form = ContactForm()
     # newsletter_form = NewsletterForm()

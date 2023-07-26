@@ -1,5 +1,4 @@
 from django.contrib import messages
-from django.core.paginator import PageNotAnInteger, EmptyPage, Paginator
 from django.shortcuts import render, redirect
 from django.urls import reverse
 
@@ -14,15 +13,6 @@ def index(request):
     foods = Menu.objects.all()
     photos = Photo.objects.all()
     articles = Article.objects.all()
-    # page = request.GET.get('page', 1)
-    # paginated_photos = Paginator(photos, 3)
-
-    # try:
-    #     photos = paginated_photos.page(page)
-    # except PageNotAnInteger:
-    #     photos = paginated_photos.page(1)
-    # except EmptyPage:
-    #     photos = paginated_photos.page(paginated_photos.num_pages)
 
     context = {
         'user': user,
@@ -47,20 +37,21 @@ def show_contact_details(request):
                 message = contact_form.save(commit=False)
                 message.user = request.user
                 message.save()
-                messages.success(request, 'Message has been sent successfully!')
+                messages.success(request, "Message has been sent successfully!")
                 return redirect(reverse('index'))
-            messages.error(request, "An error occurred, please try again later.")
+            else:
+                messages.error(request, "An error occurred, please try again later.")
+
         elif 'newsletter_forms' in request.POST:
             newsletter_form = NewsletterForm(request.POST)
             if newsletter_form.is_valid():
                 message = newsletter_form.save(commit=False)
                 message.user = request.user
                 message.save()
-                messages.success(request, 'Your e-mail has been added to our list!')
+                messages.success(request, "Your e-mail has been added to our list!")
                 return redirect(reverse('index'))
-            messages.error(request, "Error, please try again later.")
-    # contact_form = ContactForm()
-    # newsletter_form = NewsletterForm()
+            else:
+                messages.error(request, "Error, please try again later.")
     context = {
         'newsletter_form': newsletter_form,
         'contact_form': contact_form,

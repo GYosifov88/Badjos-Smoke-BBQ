@@ -8,6 +8,7 @@ Simple WEB application for BBQ and smoking meats hobby. Adding recipies, picture
 * decouple==0.0.7
 * Django==4.2.2
 * django-environ==0.10.0
+* gunicorn==21.2.0
 * Pillow==9.5.0
 * psycopg2==2.9.6
 * python-decouple==3.8
@@ -17,6 +18,7 @@ Simple WEB application for BBQ and smoking meats hobby. Adding recipies, picture
 * typing_extensions==4.6.3
 * tzdata==2023.3
 * urllib3==1.26.16
+* whitenoise==6.5.0
 
 # Used DataBase:
 * PostgreSQL

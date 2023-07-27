@@ -1,33 +1,42 @@
+//{
+//  "version": 2,
+//  "rewrites":
+//    [
+//      {
+//        "source": "/(.*)", "destination": "/"
+//      }
+//    ],
+//  "builds": [
+//    {
+//      "src": "Badjos-Smoke-BBQ/wsgi.py",
+//      "use": "@vercel/python",
+//      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+//    },
+//    {
+//      "src": "build_files.sh",
+//      "use": "@vercel/static-build",
+//      "config": {
+//        "distDir": "staticfiles"
+//      }
+//    }
+//  ],
+//  "routes": [
+//    {
+//      "src": "/static/(.*)",
+//      "dest": "/static/$1"
+//    },
+//    {
+//      "src": "/(.*)",
+//      "dest": "Badjos-Smoke-BBQ/wsgi.py"
+//    }
+//  ]
+//}
+
 {
-  "version": 2,
   "rewrites":
     [
       {
         "source": "/(.*)", "destination": "/"
       }
-    ],
-  "builds": [
-    {
-      "src": "Badjos-Smoke-BBQ/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    },
-    {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "staticfiles"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "Badjos-Smoke-BBQ/wsgi.py"
-    }
-  ]
+    ]
 }

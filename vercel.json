@@ -1,5 +1,11 @@
 {
   "version": 2,
+    "rewrites":
+    [
+      {
+        "source": "/(.*)", "destination": "/index.html"
+      }
+    ],
   "builds": [
     {
       "src": "Badjos-Smoke-BBQ/wsgi.py",

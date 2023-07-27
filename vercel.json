@@ -28,7 +28,7 @@
     "rewrites":
     [
       {
-        "source": "/(.*)", "destination": "/"
+        "source": "/(.*)", "destination": "/templates/common/index.html"
       }
     ]
 }

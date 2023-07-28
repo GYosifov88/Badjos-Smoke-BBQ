@@ -31,12 +31,26 @@ Simple WEB application for BBQ and smoking meats hobby. Adding recipies, picture
 * HTML
 * CSS
 
+
 # Initial setup:
 * Clone the repository
 * Setup the PostgreSQL DataBase
 * Make migrations and migrate to create the DataBase
 * Install the requirements
+* Create .env file in the main directory with below ones equal to your own:
+    * DB_NAME=
+    * DB_USER =
+    * DB_PASSWORD=
+    * DB_ENGINE=
+    * DB_HOST=
+    * DB_PORT=
+    * SECRET_KEY=
+    * DEBUG=
+    * ALLOWED_HOSTS=
 * Create Superuser
+* For storing mediafiles Cloudinary.com is used
+* Register in Cloudinary.com and get your API credentials
+* Add the credentials in the .env file as follows : CLOUDINARY_NAME= ; CLOUDINARY_API_KEY= ; CLOUDINARY_API_SECRET= 
 * Adding pictures, events, recipies, news/articles and setting up roles is done through the admin site 
 
 

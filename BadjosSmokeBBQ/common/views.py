@@ -38,7 +38,7 @@ def show_contact_details(request):
                 message.user = request.user
                 message.save()
                 messages.success(request, "Message has been sent successfully!")
-                return redirect(reverse('index'))
+                # return redirect(reverse('index'))
             else:
                 messages.error(request, "An error occurred, please try again later.")
 
@@ -49,7 +49,7 @@ def show_contact_details(request):
                 message.user = request.user
                 message.save()
                 messages.success(request, "Your e-mail has been added to our list!")
-                return redirect(reverse('index'))
+                # return redirect(reverse('index'))
             else:
                 messages.error(request, "Error, please try again later.")
     context = {
